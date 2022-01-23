@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FW Inform&#225;tica"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-07 10:23:58 "/>
+        <attribute name="created" value="RlcgSW5mb3Jtw6F0aWNhO0RFU0tUT1AtU0hLTFVQSTsyMDIyLTAxLTA3OyIxMDowMzowNSAiOzM3NTU="/>
+        <attribute name="edited" value="RlcgSW5mb3Jtw6F0aWNhO0RFU0tUT1AtU0hLTFVQSTsyMDIyLTAxLTA3OyIxMDoyMzo1OCAiOzE7Mzg3Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cliente" type="String" array="False" size=""/>
+            <declare name="cart&#227;o" type="Boolean" array="False" size=""/>
+            <declare name="numero" type="String" array="False" size=""/>
+            <input variable="cliente"/>
+            <input variable="cart&#227;o"/>
+            <if expression="cart&#227;o">
+                <then>
+                    <input variable="numero"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelimente voc&#234; n&#227;o conseguirar concluir a compra, pois s&#243; aceitamos compra pelo cart&#227;o!&quot;" newline="True"/>
+                    <breakpoint/>
+                </else>
+            </if>
+            <output expression="&quot;Exelente compra!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
