@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favcon-mp/faviconmp.png" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do se navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagens flexíveis">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.ogg" type="audio/ogg">
+        <source src="midias/guanacast-33.wav" type="audio/wav">
+        <p>Inflizmente seu navegador não consegue reproduzir áudio. <a href="midias/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg">Click para baixar o arquivo MP3</a></p>
+    </audio>
+    <p>Inflizmente seu navegador não consegue reproduzir áudio. <a href="midias/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg">Click para baixar o arquivo MP3</a></p>
+    <br>
+    <a href="../../menu-pastasHTML\todos-exercicios-desfios.html" target="_self" rel="next"><big>Voltar para menu principal</big></a>
+</body>
+
+</html>

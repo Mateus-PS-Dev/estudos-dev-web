@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+/*Regra @charset caso haja problema com acentuação */
+
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital@0;1&family=Concert+One&family=Nova+Mono&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playball&family=Share+Tech+Mono&family=Syne+Mono&display=swap');
+ :root {
+    /* cores triade em relação a cor1*/
+    --cor1: #0a8c78;
+    --cor2: #0B4038;
+    --cor3: #8C188C;
+    --cor4: #8C7318;
+    --cor5: #403201;
+    /*até aqui*/
+    --cor6: #d98e25;
+    --cor7: #035F99;
+    --fonte1: 'Cantarell', sans-serif;
+    --fonte2: 'Nova Mono', monospace;
+    --fonte3: 'Share Tech Mono', monospace;
+    --fonte4: 'Philosopher', sans-serif;
+    --fonte5: 'Playball', cursive;
+    --fonte6: 'Syne Mono', monospace;
+    --imgbkg: url('imagens/img-fundo/matrix.png')
+}
+
+body {
+    color: azure;
+    background-color: grey;
+    font-family: var(--fonte3);
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: var(--cor1);
+    font-family: var(--fonte2);
+    box-shadow: 0px 0px 10px black;
+    padding: 10px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+header>ul {
+    text-align: left;
+    list-style-type: '\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+    padding: 30px;
+}
+
+nav>ul {
+    text-align: left;
+    list-style-type: '\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+    padding: 10px;
+}
+
+#titulo-principal {
+    color: azure;
+    font-family: var(--fonte6);
+    text-shadow: 2px 2px 4px black;
+}
+
+.foto-pessoal {
+    text-align: center;
+}
+
+.sobre-mim {
+    color: azure;
+    font-family: var(--fonte6);
+    text-shadow: 1px 1px 3px black;
+}
+
+main {
+    background-color: grey;
+    padding: 0px 10px 0px 10px;
+    margin: 10px 0px;
+}
+
+section {
+    box-shadow: 0px 0px 10px black;
+    border-radius: 30px;
+    margin: 0px;
+}
+
+section.destaques {
+    font-size: 20px;
+    background-image: linear-gradient(to bottom, var(--cor6), var(--cor3));
+    font-family: var(--fonte6);
+    color: azure;
+    text-shadow: 1px 1px 5px black;
+    padding: 30px;
+    margin: 20px 0px;
+}
+
+section.repositorio {
+    background-image: var(--imgbkg);
+    color: azure;
+    text-shadow: 1px 1px 5px black;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+section.complementacao {
+    color: azure;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor4));
+    text-shadow: 1px 1px 5px black;
+    padding: 30px;
+    margin: 20px 0px;
+}
+
+ul.destaques {
+    columns: 4;
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 10px 0px;
+    margin: 0px 0px;
+}
+
+ul.destaques>div {
+    width: 220px;
+    height: 350px;
+    padding: 20px;
+    margin: 0px 20px;
+}
+
+ul.destaques>div>li {
+    text-align: center;
+    border-radius: 30px;
+    background-color: var(--cor6);
+    padding: 3px;
+    margin: 0px 1px;
+    box-shadow: 0px 0px 10px black;
+}
+
+ul.repositorio {
+    columns: 3;
+    column-width: 380px;
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 10px 0px;
+    margin: 0px 0px;
+}
+
+ul.repositorio>li {
+    padding: 2px;
+    margin: 0px;
+}
+
+a:visited {
+    color: black;
+}
+
+a:visited>h2 {
+    color: azure;
+}
+
+a:visited>ol {
+    color: azure;
+}
+
+a:hover {
+    text-shadow: 0.5px 0.5px 2px azure;
+}
+
+ol.teste {
+    text-align: center;
+    columns: 1;
+    list-style-position: inside;
+}
+
+section.repositorio>ul>li>article {
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px black;
+    text-align: center;
+    text-shadow: none;
+    width: 380px;
+    height: 380px;
+    padding: 10px;
+    margin: 10px;
+}
+
+article.html5-css3 {
+    background-color: var(--cor2);
+}
+
+article.javascript {
+    background-color: var(--cor6);
+}
+
+article.python {
+    background-color: var(--cor7);
+}
+
+article.pontonet {
+    background-color: var(--cor1);
+}
+
+article.csharp {
+    background-color: var(--cor5);
+}
+
+article.uxui {
+    background-color: var(--cor3);
+}
+
+article.certificados {
+    background-color: var(--cor4);
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px black;
+    text-align: center;
+    text-shadow: none;
+    padding: 30px;
+    margin: 10px;
+}
+
+article.certificados>ol>ul {
+    columns: 4;
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0px;
+    margin: 0px 0px;
+}
+
+article.certificados>ol>ul>li {
+    margin: 0px 0px;
+}
+
+li {
+    text-align: start;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-shadow: 0.5px 0.5px 2px azure;
+}
+
+ol.teste {
+    text-align: center;
+    columns: 1;
+    list-style-position: inside;
+}
+
+footer {
+    background-color: var(--cor1);
+    font-family: var(--fonte2);
+    box-shadow: 0px 0px 10px black;
+    padding: 10px 0px;
+    margin: 0px 0px 0px 0px;
+}
