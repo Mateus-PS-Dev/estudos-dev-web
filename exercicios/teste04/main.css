@@ -1,0 +1,726 @@
+@charset "UTF-8";
+
+/*DEPOIS DE CONCLUIR VERIFICAR QUAIS OBSERVAÇÕES SÃO NECESSÁRIAS MANTER E QUAIS NÃO SÃO.*/
+:root {
+    --mono: monospace;
+    --times: times;
+    --arial: arial;
+    --blue: #1c0875;
+    --red: #9b0101;
+    --yellow: #ced109;
+    --green: #049223;
+    --orange: #b95e08;
+    --purple: #8a0683;
+    --black: #000000;
+    --white: #ffffff;
+    --fontSizeG: 1.4em;
+    --fontSizeB: 1.2em;
+    --fontsizeN: 1em;
+    --fontSizeS: 0.7em;
+    --boxSizeG: 60vh;
+    --boxSizeB: 45vh;
+    --boxSizeN: 25vh;
+    --boxSizeS: 15vh;
+    --borderSizeS: 1vh;
+    --borderSizeB: 2vh;
+}
+
+
+/*Classe base*/
+.normal {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --fontFamily: var(--arial);
+    --fontSize: 1em;
+    --headerHeight: 30vh;
+    --mainHeight: 180vh;
+    --mainPTop: 34vh;
+    --articleHeight: 40vh;
+    --articleWidth: 30vw;
+    --articleWidthPos: 8.5vw;
+    --articleHeightPos1: 4vh;
+    --articleHeightPos2: 48vh;
+    --articleHeightPos3: 92vh;
+    --articleHeightPos4: 136vh;
+    --buttonHeigth: 6vh;
+    --buttonWidth: 5vw;
+    --borderSize: 0.1vh;
+    --borderColor: var(--black);
+    --boxShadow: none;
+}
+
+
+
+/*Button Background Color*/
+.btn-blue {
+    --bg: var(--blue);
+}
+
+.btn-red {
+    --bg: var(--red);
+}
+
+.btn-yellow {
+    --bg: var(--yellow);
+}
+
+.btn-green {
+    --bg: var(--green);
+}
+
+.btn-orange {
+    --bg: var(--orange);
+}
+
+.btn-purple {
+    --bg: var(--purple);
+}
+
+.btn-black {
+    --bg: var(--black);
+}
+
+.btn-white {
+    --bg: var(--white);
+}
+
+/*Button Font Color*/
+.btn-font-blue {
+    --fontColor: var(--blue);
+    
+}
+
+.btn-font-red {
+    --fontColor: var(--red);
+    
+}
+
+.btn-font-yellow {
+    --fontColor: var(--yellow);
+    
+}
+
+.btn-font-green {
+    --fontColor: var(--green);
+    
+}
+
+.btn-font-orange {
+    --fontColor: var(--orange);
+    
+}
+
+.btn-font-purple {
+    --fontColor: var(--purple);
+    
+}
+
+.btn-font-black {
+    --fontColor: var(--black);
+}
+
+.btn-font-white {
+    --fontColor: var(--white);
+    
+}
+
+/*Button Font Family*/
+.btn-mono {
+    --fontFamily: var(--mono);
+}
+
+.btn-times {
+    --fontFamily: var(--times);
+}
+
+.btn-arial {
+    --fontFamily: var(--arial);
+}
+
+/*Button Web Site Size*/
+/*Apresentando Erro no tamanho dos article, imagino que seja por causa da div mair revisar!!!*/
+.btn-small {
+    --headerHeight: 20vh;
+    --mainHeight: 140vh;
+    --mainPTop: 28vh;
+    --articleHeight: 30vh;
+    --articleWidth: 25vw
+    --articleWidthPos: 11vw;
+    --articleHeightPos1: 4vh;
+    --articleHeightPos2: 38vh;
+    --articleHeightPos3: 72vh;
+    --articleHeightPos4: 106vh;
+    --fontSize:var(--fontSizeS);
+    --buttonHeigth: 4vh;
+    --buttonWidth: 4vw;
+}
+
+.btn-normal {
+    --headerHeight: 30vh;
+    --mainHeight: 180vh;
+    --mainPTop: 34vh;
+    --articleHeight: 40vh;
+    --articleWidth: 30vw;
+    --articleWidthPos: 8.5vw;
+    --articleHeightPos1: 4vh;
+    --articleHeightPos2: 48vh;
+    --articleHeightPos3: 92vh;
+    --articleHeightPos4: 136vh;
+    --fontSize:var(--fontSizeN);
+    --buttonHeigth: 6vh;
+    --buttonWidth: 5vw;
+}
+
+.btn-big {
+    --headerHeight: 40vh;
+    --mainHeight: 220vh;
+    --mainPTop: 38vh;
+    --articleHeight: 50vh;
+    --articleWidth: 35vw;
+    --articleWidthPos: 6vw;
+    --articleHeightPos1: 4vh;
+    --articleHeightPos2: 58vh;
+    --articleHeightPos3: 112vh;
+    --articleHeightPos4: 166vh;
+    --fontSize:var(--fontSizeB);
+    --buttonHeigth: 7vh;
+    --buttonWidth: 6vw;
+}
+
+.btn-giant {
+    --headerHeight: 55vh;
+    --mainHeight: 300vh;
+    --mainPTop: 44vh;
+    --articleHeight: 70vh;
+    --articleWidth: 40vw;
+    --articleWidthPos: 4.5vw;
+    --articleHeightPos1: 4vh;
+    --articleHeightPos2: 78vh;
+    --articleHeightPos3: 152vh;
+    --articleHeightPos4: 226vh;
+    --fontSize: var(--fontSizeG);
+    --buttonHeigth: 9vh;
+    --buttonWidth: 7vw;
+}
+
+/*Button Border Size*/
+.btn-bdr-none {
+    --borderSize: none;
+}
+
+.btn-bdr-small {
+    --borderSize: var(--borderSizeS);
+}
+
+.btn-bdr-big {
+    --borderSize: var(--borderSizeB);
+}
+
+/*Button Border Size*/
+/*Se or colocar box shadow tem que reduzir o tamanho dos box gigante pois se não não vai aprecer de forma vizual*/
+.btn-square {
+    --borderStyle: none;
+}
+
+.btn-round {
+    --borderStyle: 10%;
+}
+
+/*Button Border Color*/
+.btn-bdr-blue {
+    --borderColor: var(--blue);
+}
+
+.btn-bdr-red {
+    --borderColor: var(--red);
+}
+
+.btn-bdr-yellow {
+    --borderColor: var(--yellow);
+}
+
+.btn-bdr-green {
+    --borderColor: var(--green);
+}
+
+.btn-bdr-orange {
+    --borderColor: var(--orange);
+}
+
+.btn-bdr-purple {
+    --borderColor: var(--purple);
+}
+
+.btn-bdr-black {
+    --borderColor: var(--black);
+}
+
+.btn-bdr-white {
+    --borderColor: var(--white);
+}
+
+/*Button Box shadow*/
+/*Se or colocar box shadow tem que reduzir o tamanho dos box grandes pois se não não vai aprecer de forma vizual*/
+.btn-box-shadow {
+    --boxShadow: 1px 1px 5px var(--black);
+}
+
+.btn-box-normal {
+    --boxShadow: none;
+}
+
+
+/*Mudar o boxSize para headerHeight */
+header {
+    position: absolute;
+    top: 4vh;
+    left: 1.8vw;
+    background-color: var(--bg);
+    color: var(--fontColor);
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    text-align: center;
+    width: 95vw;
+    height: var(--boxSize);
+    border: var(--borderSize) solid var(--borderColor);
+    border-radius: var(--borderStyle);
+    box-shadow: var(--boxShadow);
+}
+
+header > ul {
+    list-style: none;
+    columns: 4;
+}
+
+/*Criar main height*/
+main {
+    position: absolute;
+    top: var(--mainPTop);
+    left: 1.8vw;
+    background-color: var(--bg);
+    color: var(--fontColor);
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    text-align: center;
+    width: 95vw;
+    height: var(--mainHeight);
+    border: var(--borderSize) solid var(--borderColor);
+    border-radius: var(--borderStyle);
+    box-shadow: var(--boxShadow);
+    columns: 2;
+}
+
+/*Criar margin, padding size, onde o maior é menor e o menor é maior*/
+article {
+    background-color: var(--bg);
+    color: var(--fontColor);
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    text-align: center;
+    width: var(--articleWidth);
+    height: var(--articleHeight);
+    border: var(--borderSize) solid var(--borderColor);
+    border-radius: var(--borderStyle);
+    box-shadow: var(--boxShadow);
+    /*olhar como que o box-sizing funciona*/
+}
+
+.bg-color {
+    position: absolute;
+    top: var(--articleHeightPos1);
+    left: var(--articleWidthPos);
+}
+
+.font-color {
+    position: absolute;
+    top: var(--articleHeightPos1);
+    right: var(--articleWidthPos);
+}
+
+.font-family {
+    position: absolute;
+    top: var(--articleHeightPos2);
+    left: var(--articleWidthPos);
+}
+
+.site-size {
+    position: absolute;
+    top: var(--articleHeightPos2);
+    right: var(--articleWidthPos);
+}
+
+.bdr-size {
+    position: absolute;
+    top: var(--articleHeightPos3);
+    left: var(--articleWidthPos);
+}
+
+.bdr-color {
+    position: absolute;
+    top: var(--articleHeightPos3);
+    right: var(--articleWidthPos);
+}
+
+.bdr-style {
+    position: absolute;
+    top: var(--articleHeightPos4);
+    left: var(--articleWidthPos);
+}
+
+.box-shadow {
+    position: absolute;
+    top: var(--articleHeightPos4);
+    right: var(--articleWidthPos);
+}
+
+article > .eight-btn {
+    columns: 4;
+}
+
+/*Fazer o buttom height S M B G*/
+.eight-btn > div > button {
+    height: var(--buttonHeigth);
+    width: var(--buttonWidth);
+    margin: 2vh 0.8vw;
+}
+
+article > .four-btn {
+    columns: 4;
+}
+
+/*Fazer um buttom width para 8 4 3 2*/
+.four-btn > div > button {
+    height: var(--buttonHeigth);
+    width: var(--buttonWidth);
+    margin: 2vh 0.1vw;
+}
+
+
+article > .three-btn {
+    columns: 3;
+}
+
+.three-btn > div > button {
+    height: var(--buttonHeigth);
+    width: var(--buttonWidth);
+    margin: 2vh 1vw;
+}
+
+article > .two-btn {
+    columns: 2;
+}
+
+
+
+.two-btn > div > button {
+    height: var(--buttonHeigth);
+    width: var(--buttonWidth);
+    margin: 2vh 1vw;
+}
+
+/*Background Color*/
+div > .btn-blue {
+    background-color: var(--blue);
+    text-align: center;
+    color: var(--white);
+    border-radius: var(--borderStyle);
+    border: none;
+}
+
+div > .btn-red {
+    background-color: var(--red);
+    text-align: center;
+    color: var(--white);
+    border-radius: var(--borderStyle);
+    border: none;
+}
+
+div > .btn-yellow {
+    background-color: var(--yellow);
+    text-align: center;
+    color: var(--white);
+    border-radius: var(--borderStyle);
+    border: none;
+}
+
+div > .btn-green {
+    background-color: var(--green);
+    text-align: center;
+    color: var(--white);
+    border-radius: var(--borderStyle);
+    border: none;
+}
+
+div > .btn-orange {
+    background-color: var(--orange);
+    text-align: center;
+    color: var(--white);
+    border-radius: var(--borderStyle);
+    border: none;
+}
+
+div > .btn-purple {
+    background-color: var(--purple);
+    text-align: center;
+    color: var(--white);
+    border-radius: var(--borderStyle);
+    border: none;
+}
+
+div > .btn-black {
+    background-color: var(--black);
+    text-align: center;
+    color: var(--white);
+    border-radius: var(--borderStyle);
+    border: none;
+}
+
+div > .btn-white {
+    background-color: var(--white);
+    text-align: center;
+    color: var(--black);
+    border-radius: var(--borderStyle);
+}
+
+/*Button Font Color*/
+div > .btn-font-blue {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--blue);
+    border-radius: var(--borderStyle);
+    
+}
+
+div > .btn-font-red {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--red);
+    border-radius: var(--borderStyle);
+    
+}
+
+div > .btn-font-yellow {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--yellow);
+    border-radius: var(--borderStyle);
+    
+}
+
+div > .btn-font-green {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--green);
+    border-radius: var(--borderStyle);
+    
+}
+
+div > .btn-font-orange {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--orange);
+    border-radius: var(--borderStyle);
+    
+}
+
+div > .btn-font-purple {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--purple);
+    border-radius: var(--borderStyle);
+    
+}
+
+div > .btn-font-black {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--black);
+    border-radius: var(--borderStyle);
+}
+
+div > .btn-font-white {
+    background-color: var(--black);
+    text-align: center;
+    color: var(--white);
+    border-radius: var(--borderStyle);
+    
+}
+
+/*Button Font Family*/
+div > .btn-mono {
+    background-color: var(--bg);
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--fontColor);
+    font-family: var(--mono);
+    border-radius: var(--borderStyle);
+}
+
+div > .btn-times {
+    background-color: var(--bg);
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--fontColor);
+    font-family: var(--times);
+    border-radius: var(--borderStyle);
+}
+
+div > .btn-arial {
+    background-color: var(--bg);
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--fontColor);
+    font-family: var(--arial);
+    border-radius: var(--borderStyle);
+}
+
+/*Button Web Site Size*/
+div > .btn-small {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--black);
+    border-radius: var(--borderStyle);
+}
+
+div > .btn-normal {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--black);
+    border-radius: var(--borderStyle);
+}
+
+div > .btn-big {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--black);
+    border-radius: var(--borderStyle);
+}
+
+div > .btn-giant {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--black);
+    border-radius: var(--borderStyle);
+}
+
+/*Button Border Size*/
+div > .btn-bdr-none {
+    background-color: var(--white);
+    text-align: center;
+    color: var(--black);
+    font-family: var(--arial);
+    border: none;
+}
+
+div > .btn-bdr-small {
+    background-color: var(--white);
+    text-align: center;
+    color: var(--black);
+    font-family: var(--arial);
+    border: var(--borderSizeS) solid var(--black);
+}
+
+div > .btn-bdr-big {
+    background-color: var(--white);
+    font-size: 0.6em;
+    text-align: center;
+    color: var(--black);
+    font-family: var(--arial);
+    border: var(--borderSizeB) solid var(--black);
+}
+
+/*Button Border Color*/
+div > .btn-bdr-blue {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--fontColor);
+    border-radius: var(--borderStyle);
+    border: 0.2vh solid var(--blue);
+}
+
+div > .btn-bdr-red {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--fontColor);
+    border-radius: var(--borderStyle);
+    border: 0.2vh solid var(--red);
+}
+
+div > .btn-bdr-yellow {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--fontColor);
+    border-radius: var(--borderStyle);
+    border: 0.2vh solid var(--yellow);
+}
+
+div > .btn-bdr-green {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--fontColor);
+    border-radius: var(--borderStyle);
+    border: 0.2vh solid var(--green);
+}
+
+div > .btn-bdr-orange {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--fontColor);
+    border-radius: var(--borderStyle);
+    border: 0.2vh solid var(--orange);
+}
+
+div > .btn-bdr-purple {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--fontColor);
+    border-radius: var(--borderStyle);
+    border: 0.2vh solid var(--purple);
+}
+
+div > .btn-bdr-black {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--fontColor);
+    border-radius: var(--borderStyle);
+    border: 0.2vh solid var(--black);
+}
+
+div > .btn-bdr-white {
+    background-color: var(--black);
+    text-align: center;
+    color: var(--white);
+    border-radius: var(--borderStyle);
+    border: 0.2vh solid var(--white);
+}
+
+/*Button Border Form*/
+div > .btn-square {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--fontColor);
+    border-radius: none;
+}
+
+div > .btn-round {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--fontColor);
+    border-radius: 20%;
+}
+/*Button Box shadow*/
+div > .btn-box-shadow {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--fontColor);
+    border: none;
+    box-shadow: 1px 1px 5px var(--black);
+}
+
+div > .btn-box-normal {
+    background-color: var(--bg);
+    text-align: center;
+    color: var(--fontColor);
+    box-shadow: none;
+}
+
