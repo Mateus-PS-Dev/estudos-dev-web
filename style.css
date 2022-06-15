@@ -26,7 +26,7 @@
     --cor7: #A63000;
     --cor8: #591E06;
     /*Ver quais fontes são realmente necessárias*/
-    --fonte1: 'Cantarell', sans-serif;
+    --fonte1: 'Bahnschrift', sans-serif;
     --fonte2: 'Nova Mono', monospace;
     --fonte3: 'Share Tech Mono', monospace;
     --fonte4: 'Philosopher', sans-serif;
@@ -37,7 +37,6 @@
 body {
     color: black;
     background-color: var(--cor3);
-    font-family: var(--fonte3);
     text-align: center;
     width: 99vw;
     height: 188vh;
@@ -68,23 +67,83 @@ header > div {
 nav {
     position: absolute;
     top: 68.5vh;
-    background-color: var(--cor1);
+    background-color: var(--cor3);
+    font-family: var(--fonte3);
     height: 9vh;
     width: 98.8vw;
     padding: 0vh 0vw;
     margin: 0vh 0vw;
 }
 
-nav>ul {
+nav > .seletores {
     position: absolute;
     top: 0vh;
+    left: 0vw;
+    background-color: var(--cor6);
     height: 9vh;
-    width: 98.8vw;
+    width: 97vw;
     padding: 0vh 1vw;
     columns: 6;
-    /* Achar o ponto - column-rule: 0.2vw solid var(--cor2);*/
-    list-style-type: none;
-    list-style-position: inside;
+}
+
+.seletor-1 {
+    position: absolute;
+    top: 0.5vh;
+    left: 0.4vw;
+    background-color: var(--cor1);
+    height: 8vh;
+    width: 16vw;
+    text-align: center;
+}
+
+.seletor-2 {
+    position: absolute;
+    top: 0.5vh;
+    left: 16.8vw;
+    background-color: var(--cor1);
+    height: 8vh;
+    width: 16vw;
+    text-align: center;
+}
+
+.seletor-3 {
+    position: absolute;
+    top: 0.5vh;
+    left: 33.2vw;
+    background-color: var(--cor1);
+    height: 8vh;
+    width: 16vw;
+    text-align: center;
+}
+
+.seletor-4 {
+    position: absolute;
+    top: 0.5vh;
+    left: 49.6vw;
+    background-color: var(--cor1);
+    height: 8vh;
+    width: 16vw;
+    text-align: center;
+}
+
+.seletor-5 {
+    position: absolute;
+    top: 0.5vh;
+    left: 66vw;
+    background-color: var(--cor1);
+    height: 8vh;
+    width: 16vw;
+    text-align: center;
+}
+
+.seletor-6 {
+    position: absolute;
+    top: 0.5vh;
+    left: 82.4vw;
+    background-color: var(--cor1);
+    height: 8vh;
+    width: 16vw;
+    text-align: center;
 }
 
 /*OLHAR - 06/22*/
@@ -396,23 +455,15 @@ li {
 }
 
 a {
+    font-size: 1.1em;
     font-weight: bold;
     text-decoration: none;
     color: black;
 }
 
-/* para as paginas a:visited>ol {
-    color: black;
-}
-
-a:hover>ol {
-    color: var(--cor2);
-    text-shadow: 0.5px 0.5px 1px black;
-}
-
 a:visited {
     color: black;
-}*/
+}
 
 a:hover {
     color: black;
