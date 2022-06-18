@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital@0;1&family=Concert+One&family=Nova+Mono&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playball&family=Share+Tech+Mono&family=Syne+Mono&display=swap');
 
- :root {
+:root {
     --cor1: #0a8c78;/*Cor perfil*/
     --cor2: #3C4544;/*Cor perfil*/
     --cor3: #161A19;/*Cor perfil*/
@@ -25,49 +25,109 @@
     --fonte6: 'Syne Mono', monospace;
 }
 
+/*Area de reação 1*/
+.formato-16d9{
+    --position-h2-btn-nav-bottom: 1.5vh;
+    --position-img-codewars-left: 0vw;
+    --position-main-btn-html-p-left: 1vw;
+    --position-div-css: 150vh;
+    --position-div-texto-css: 161vh;
+}
+
+.formato-4d3 {
+    --position-h2-btn-nav-bottom: 2.5vh;
+    --position-img-codewars-left: -10vw;
+    --position-main-btn-html-p-left: 2.5vw;
+    --position-div-css: 155vh;
+    --position-div-texto-css: 166vh;
+}
+
 body {
     color: black;
     background-color: var(--cor3);
     text-align: center;
-    width: 99vw;
-    height: 188vh;
-    padding: 0px;
-    margin: 0vh 0vw;
+    margin: 0vh;
 }
 
-header {
+/**Navegador**/ /*Revisado - 18/06/22*/
+nav {
     position: absolute;
     top: 0vh;
-    left: 0vw;
+    background-color: var(--cor1);
+    font-family: var(--fonte3);
+    height: 6vh;
+    width: 98.2vw;
+    columns: 6;
+}
+
+nav > a > button {
+    background-color: var(--cor1);
+    color: whitesmoke;
+    font-family: var(--fonte6);
+    text-shadow: 0.5px 0.5px 5px black;
+    height: 5vh;
+    width: 16vw;
+    border: 0.4vh solid var(--cor6);
+    border-radius: 1vh;
+    box-shadow: 0px 0px 3px black;
+}
+
+nav > a > button:hover{
+    box-shadow: 0px 0px 3px whitesmoke;
+}
+
+nav > a > button > h2 {
+    position: relative;
+    top: 2.5vh;
+}
+
+.seletor-1 {
+    position: absolute;
+    top: 0.5vh;
+    left: 0.4vw;
+}
+
+.seletor-2 {
+    position: absolute;
+    top: 0.5vh;
+    left: 16.8vw;
+}
+
+.seletor-3 {
+    position: absolute;
+    top: 0.5vh;
+    left: 33.1vw;
+}
+
+.seletor-4 {
+    position: absolute;
+    top: 0.5vh;
+    left: 49.4vw;
+}
+
+.seletor-5 {
+    position: absolute;
+    top: 0.5vh;
+    left: 65.6vw;
+}
+
+.seletor-6 {
+    position: absolute;
+    top: 0.5vh;
+    left: 81.9vw;
+}
+
+/*Cabeçalho*/ /*Revisado 18/06/22*/
+header {
+    position: absolute;
+    top: 6.2vh;
     background-color: whitesmoke;
     font-family: var(--fonte1);
     font-size: 1em;
     height: 45vh;
-    width: calc(90vw + 6.8vw);/*Test de calculo*/
-    margin: 0vh 0vw;
-    padding:  0.5vh 0.5vw;
+    width: 96vw;/*Test de calculo*/
+    padding: 0.5vh 0.5vw;
     border: 1vh solid var(--cor1);
-}
-
-/*OLHAR - 06/22*/
-#titulo-principal {
-    color: var(--cor1);
-    font-family: var(--fonte6);
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-.foto-pessoal {
-    position: relative;
-    bottom: 5vh;
-    text-align: center;
-}
-
-.sobre {
-    color: var(--cor1);
-    font-family: var(--fonte6);
-    font-size: 1em;
-    text-align: left;
-    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 .introducao {
@@ -120,50 +180,248 @@ header > div > div > a:hover {
     text-shadow: 0.5px 0.5px 0.5px var(--cor2);
 }
 
-.code-wars > a {
-    color: whitesmoke;
+.codewars {
+    position: relative;
+    left: var(--position-img-codewars-left);
 }
 
-.code-wars > a:visited {
-    color: whitesmoke;
-}
-
-.code-wars > a:hover {
-    color: whitesmoke;
-    text-shadow: none;
-}
-
-.code-wars > a > img:hover {
+.codewars > a > img:hover {
     background-color: var(--cor3);
 }
 
-nav {
+/*OLHAR - 06/22*/
+#titulo-principal {
+    color: var(--cor1);
+    font-family: var(--fonte6);
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.foto-pessoal {
+    position: relative;
+    bottom: 5vh;
+    text-align: center;
+}
+
+.sobre {
+    color: var(--cor1);
+    font-family: var(--fonte6);
+    font-size: 1em;
+    text-align: left;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+
+/*Area de reação 2*/
+.selecao-html-css {
+    --background-selecao-HC: var(--cor2);
+    --background-selecao-JS: var(--cor3);
+    --background-selecao-csharp: var(--cor3);
+    --background-selecao-sql: var(--cor3);
+    --background-selecao-python: var(--cor3);
+    --background-selecao-react: var(--cor3);
+
+    --height-selecao-HC: 8vh;
+    --height-selecao-JS: 6vh;
+    --height-selecao-csharp: 6vh;
+    --height-selecao-sql: 6vh;
+    --height-selecao-python: 6vh;
+    --height-selecao-react: 6vh;
+
+    --bdr-selecao-HC: 0.5vh solid var(--cor3);
+    --bdr-selecao-JS: none;
+    --bdr-selecao-csharp: none;
+    --bdr-selecao-sql: none;
+    --bdr-selecao-python: none;
+    --bdr-selecao-react: none;
+
+    --bdr-rad-selecao-HC: 1vh 1vh 0vh 0vh;
+    --bdr-rad-selecao-JS: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-csharp: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-sql: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-python: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
+}
+
+.selecao-js {
+    --background-selecao-HC: var(--cor3);
+    --background-selecao-JS: var(--cor2);
+    --background-selecao-csharp: var(--cor3);
+    --background-selecao-sql: var(--cor3);
+    --background-selecao-python: var(--cor3);
+    --background-selecao-react: var(--cor3);
+
+    --height-selecao-HC: 6vh;
+    --height-selecao-JS: 8vh;
+    --height-selecao-csharp: 6vh;
+    --height-selecao-sql: 6vh;
+    --height-selecao-python: 6vh;
+    --height-selecao-react: 6vh;
+
+    --bdr-selecao-HC: none;
+    --bdr-selecao-JS: 0.5vh solid var(--cor3);
+    --bdr-selecao-csharp: none;
+    --bdr-selecao-sql: none;
+    --bdr-selecao-python: none;
+    --bdr-selecao-react: none;
+
+    --bdr-rad-selecao-HC: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-JS: 1vh 1vh 0vh 0vh;
+    --bdr-rad-selecao-csharp: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-sql: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-python: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
+}
+
+.selecao-csharp {
+    --background-selecao-HC: var(--cor3);
+    --background-selecao-JS: var(--cor3);
+    --background-selecao-csharp: var(--cor2);
+    --background-selecao-sql: var(--cor3);
+    --background-selecao-python: var(--cor3);
+    --background-selecao-react: var(--cor3);
+
+    --height-selecao-HC: 6vh;
+    --height-selecao-JS: 6vh;
+    --height-selecao-csharp: 8vh;
+    --height-selecao-sql: 6vh;
+    --height-selecao-python: 6vh;
+    --height-selecao-react: 6vh;
+
+    --bdr-selecao-HC: none;
+    --bdr-selecao-JS: none;
+    --bdr-selecao-csharp: 0.5vh solid var(--cor3);
+    --bdr-selecao-sql: none;
+    --bdr-selecao-python: none;
+    --bdr-selecao-react: none;
+
+    --bdr-rad-selecao-HC: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-JS: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-csharp: 1vh 1vh 0vh 0vh;
+    --bdr-rad-selecao-sql: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-python: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
+}
+
+.selecao-sql {
+    --background-selecao-HC: var(--cor3);
+    --background-selecao-JS: var(--cor3);
+    --background-selecao-csharp: var(--cor3);
+    --background-selecao-sql: var(--cor2);
+    --background-selecao-python: var(--cor3);
+    --background-selecao-react: var(--cor3);
+
+    --height-selecao-HC: 6vh;
+    --height-selecao-JS: 6vh;
+    --height-selecao-csharp: 6vh;
+    --height-selecao-sql: 8vh;
+    --height-selecao-python: 6vh;
+    --height-selecao-react: 6vh;
+
+    --bdr-selecao-HC: none;
+    --bdr-selecao-JS: none;
+    --bdr-selecao-csharp: none;
+    --bdr-selecao-sql: 0.5vh solid var(--cor3);
+    --bdr-selecao-python: none;
+    --bdr-selecao-react: none;
+
+    --bdr-rad-selecao-HC: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-JS: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-csharp: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-sql: 1vh 1vh 0vh 0vh;
+    --bdr-rad-selecao-python: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
+}
+
+.selecao-python {
+    --background-selecao-HC: var(--cor3);
+    --background-selecao-JS: var(--cor3);
+    --background-selecao-csharp: var(--cor3);
+    --background-selecao-sql: var(--cor3);
+    --background-selecao-python: var(--cor2);
+    --background-selecao-react: var(--cor3);
+
+    --height-selecao-HC: 6vh;
+    --height-selecao-JS: 6vh;
+    --height-selecao-csharp: 6vh;
+    --height-selecao-sql: 6vh;
+    --height-selecao-python: 8vh;
+    --height-selecao-react: 6vh;
+
+    --bdr-selecao-HC: none;
+    --bdr-selecao-JS: none;
+    --bdr-selecao-csharp: none;
+    --bdr-selecao-sql: none;
+    --bdr-selecao-python: 0.5vh solid var(--cor3);
+    --bdr-selecao-react: none;
+
+    --bdr-rad-selecao-HC: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-JS: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-csharp: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-sql: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-python: 1vh 1vh 0vh 0vh;
+    --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
+}
+
+.selecao-react {
+    --background-selecao-HC: var(--cor3);
+    --background-selecao-JS: var(--cor3);
+    --background-selecao-csharp: var(--cor3);
+    --background-selecao-sql: var(--cor3);
+    --background-selecao-python: var(--cor3);
+    --background-selecao-react: var(--cor2);
+
+    --height-selecao-HC: 6vh;
+    --height-selecao-JS: 6vh;
+    --height-selecao-csharp: 6vh;
+    --height-selecao-sql: 6vh;
+    --height-selecao-python: 6vh;
+    --height-selecao-react: 8vh;
+
+    --bdr-selecao-HC: none;
+    --bdr-selecao-JS: none;
+    --bdr-selecao-csharp: none;
+    --bdr-selecao-sql: none;
+    --bdr-selecao-python: none;
+    --bdr-selecao-react: 0.5vh solid var(--cor3);
+
+    --bdr-rad-selecao-HC: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-JS: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-csharp: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-sql: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-python: 1vh 1vh 1vh 1vh;
+    --bdr-rad-selecao-react: 1vh 1vh 0vh 0vh;
+}
+
+main {
     position: absolute;
-    top: 49vh;
+    top: 55.2vh;
+    background-color: var(--cor3);
+}
+
+/*Navegador de artigos*/
+.navegador {
+    position: absolute;
     background-color: var(--cor6);
     height: 7vh;
-    width: 98.8vw;
+    width: 98.2vw;
     columns: 6;
 }
 
-nav > div > button {
-    background-color: var(--cor3);
+.navegador > button {
+    top: 0.5vh;
     font: 1.1em var(--fonte1);
-    color: white;
+    color: whitesmoke;
     font-weight: bold;
-    height: 6vh;
-    width: 15.8vw;
     text-align: center;
-    border: none;
-    border-radius: 1vh;
+    width: 15.8vw;
 }
 
-nav > div > button > p {
+.navegador > button > p {
     position: relative;
     bottom: 1.5vh;
 }
 
-nav > div > button > img {
+.navegador > button > img {
     position: absolute;
     top: 0.8vh;
     left: 1vw;
@@ -171,63 +429,88 @@ nav > div > button > img {
 
 .sele-1 {
     position: absolute;
-    top: 0.5vh;
-    left: 0.5vw;
+    left: 0.1vw;
+    background-color: var(--background-selecao-HC);
+    height: var(--height-selecao-HC);
+    border: var(--bdr-selecao-HC);
+    border-radius: var(--bdr-rad-selecao-HC)
 }
 
 .sele-1 > p {
     position: relative;
-    left: 1vw;
+    left: var(--position-main-btn-html-p-left);
 }
 
 .sele-2 {
     position: absolute;
-    top: 0.5vh;
-    left: 16.9vw;
+    left: 16.6vw;
+    background-color: var(--background-selecao-JS);
+    height: var(--height-selecao-JS);
+    border: var(--bdr-selecao-JS);
+    border-radius: var(--bdr-rad-selecao-JS)
 }
 
 .sele-3 {
     position: absolute;
-    top: 0.5vh;
-    left: 33.3vw;
+    left: 33vw;
+    background-color: var(--background-selecao-csharp);
+    height: var(--height-selecao-csharp);
+    border: var(--bdr-selecao-csharp);
+    border-radius: var(--bdr-rad-selecao-csharp)
 }
 
 .sele-4 {
     position: absolute;
-    top: 0.5vh;
-    left: 49.7vw;
+    left: 49.5vw;
+    background-color: var(--background-selecao-sql);
+    height: var(--height-selecao-sql);
+    border: var(--bdr-selecao-sql);
+    border-radius: var(--bdr-rad-selecao-sql)
 }
 
 .sele-5 {
     position: absolute;
-    top: 0.5vh;
-    left: 66.1vw;
+    left: 65.9vw;
+    background-color: var(--background-selecao-python);
+    height: var(--height-selecao-python);
+    border: var(--bdr-selecao-python);
+    border-radius: var(--bdr-rad-selecao-python)
 }
 
 .sele-6 {
     position: absolute;
-    top: 0.5vh;
-    left: 82.5vw;
+    left: 82.3vw;
+    background-color: var(--background-selecao-react);
+    height: var(--height-selecao-react);
+    border: var(--bdr-selecao-python);
+    border-radius: var(--bdr-rad-selecao-react)
 }
 
-main {
-    position: absolute;
-    top: 57vh;
-    left: 0vw;
-    height: 240vh;
-    width: 98.8vw;
-    background-color: var(--cor3);
-}
 
-/**Seção de Repositorio:**//*REVISADO - 06/22*/
-section.repositorio {
+
+/**Seção de Repositorio:**//*REVISADO - 18/06/22*/
+.repositorio {
     position: absolute;
-    top: 0vh;
-    left: 0.5vw;
-    color: azure;
+    top: 8vh;
+    left: 0.4vw;
+    color: whitesmoke;
     font-family: var(--fonte6);
     font-size: 1.2em;
-    text-align: center;
+    text-align: left;
+    text-shadow: 1px 1px 5px black;
+    background-color: var(--cor2);
+    width: 96.4vw;
+    height: 240vh;
+    padding: 1vh 0.5vw;
+}
+
+.html-css {
+    position: absolute;
+    left: 0.4vw;
+    color: whitesmoke;
+    font-family: var(--fonte6);
+    font-size: 1.2em;
+    text-align: left;
     text-shadow: 1px 1px 5px black;
     background-color: var(--cor2);
     width: 96.8vw;
@@ -235,43 +518,25 @@ section.repositorio {
     padding: 1vh 0.5vw;
 }
 
-div.repositorio {
-    text-align: left;
-}
-
-/*Visualização de seleção*/
-div.repositorio > article > a:visited > img {
-    background-color: var(--cor2);
-    box-shadow: 0px 0px 10px white;
-    border: 5px solid var(--cor6);
-    border-radius: 10px;
-}
-
-div.repositorio > article >  a:hover > img {
-    background-color: var(--cor2);
-    box-shadow: 0px 0px 10px white;
-    border: 5px solid var(--cor3);
-    border-radius: 10px;
-}
-
-div.html {
+.html {
     position: absolute;
-    top: 5vh;
+    top: 3vh;
     left: 2vw;
     height: 140vh;
     width: 45.4vw;
 }
-div.css {
+
+.css {
     position: absolute;
-    top: 150vh;
+    top: var(--position-div-css);
     left: 2vw;
     height: 60vh;
     width: 45.4vw
 }
 
-div.texto-html {
+.texto-html {
     position: absolute;
-    top: 16vh;
+    top: 13vh;
     right: 2vw;
     background-color: whitesmoke;
     font-family: var(--fonte1);
@@ -284,9 +549,9 @@ div.texto-html {
     border-radius: 2vh 1vw;
 }
 
-div.texto-css {
+.texto-css {
     position: absolute;
-    top: 161vh;
+    top: var(--position-div-texto-css);
     right: 2vw;
     background-color: whitesmoke;
     font-family: var(--fonte1);
@@ -299,39 +564,40 @@ div.texto-css {
     border-radius: 2vh 1vw;
 }
 
-div.html > ol > ul > li > a{
+.html > ol > ul > li > a{
     color: var(--corHTML);
 }
 
-div.html > ol > ul > li > a:hover{
+.html > ol > ul > li > a:hover{
     color: black;
 }
 
-div.html > ol > ul > li > a:visited {
+.html > ol > ul > li > a:visited {
     color: var(--cor3);
 }
 
-div.html > ol > ul > li > a:visited:hover {
+.html > ol > ul > li > a:visited:hover {
     color: black;
 }
 
-div.css > ol > ul > li > a{
+.css > ol > ul > li > a{
     color: var(--corCSS);
 }
 
-div.css > ol > ul > li > a:hover{
+.css > ol > ul > li > a:hover{
     color: black;
 }
 
-div.css > ol > ul > li > a:visited {
+.css > ol > ul > li > a:visited {
     color: var(--cor3);
 }
 
-div.css > ol > ul > li > a:visited:hover {
+.css > ol > ul > li > a:visited:hover {
     color: black;
 }
 
-article.js > a > img {
+/*ARTIGOS*/
+.js > a > img {
     position: absolute;
     top: 45.5vh;
     left: 4vw;
@@ -383,9 +649,10 @@ article.react > a > img {
 
 footer {
     position: absolute;
-    top: 300vh;
+    top: 306.2vh;
+    left: 0vw;
     height: 5vh;
-    width: 98.8vw;
+    width: 98.2vw;
     background-color: var(--cor1);
     font-family: var(--fonte2);
     padding: 1vh 0vw;
