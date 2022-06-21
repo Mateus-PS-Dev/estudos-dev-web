@@ -27,19 +27,47 @@
 
 /*Area de reação 1*/
 .formato-16d9{
-    --position-h2-btn-nav-bottom: 1.5vh;
+    --position-left-btn-seletor-1: 0.4vw;
+    --position-left-btn-seletor-2: 16.8vw;
+    --position-left-btn-seletor-3: 33.1vw;
+    --position-left-btn-seletor-4: 49.5vw;
+    --position-left-btn-seletor-5: 65.9vw;
+    --position-left-btn-seletor-6: 82.3vw;
+    --position-h2-btn-nav-bottom: 2.8vh;
     --position-img-codewars-left: 0vw;
+    --position-HC-btn-left: 0.15vw;
+    --position-react-btn-left: 82.6vw;
     --position-main-btn-html-p-left: 1vw;
     --position-div-css: 150vh;
     --position-div-texto-css: 161vh;
+
+    --width-nav: 98.6vw;
+    --width-header: 96.7vw;
+    --width-navegador: 98.6vw;
+    --width-section: 96.8vw;
+    --width-footer: 98.6vw;
 }
 
 .formato-4d3 {
+    --position-left-btn-seletor-1: 0.4vw;
+    --position-left-btn-seletor-2: 16.8vw;
+    --position-left-btn-seletor-3: 33.1vw;
+    --position-left-btn-seletor-4: 49.4vw;
+    --position-left-btn-seletor-5: 65.6vw;
+    --position-left-btn-seletor-6: 81.9vw;
     --position-h2-btn-nav-bottom: 2.5vh;
     --position-img-codewars-left: -10vw;
+    --position-HC-btn-left: 0.1vw;
+    --position-react-btn-left: 82.3vw;
     --position-main-btn-html-p-left: 2.5vw;
     --position-div-css: 155vh;
     --position-div-texto-css: 166vh;
+
+    --width-nav: 98.2vw;
+    --width-header: 96vw;
+    --width-navegador: 98.2vw;
+    --width-section: 96.4vw;
+    --width-footer: 98.2vw;
 }
 
 body {
@@ -56,11 +84,12 @@ nav {
     background-color: var(--cor1);
     font-family: var(--fonte3);
     height: 6vh;
-    width: 98.2vw;
+    width: var(--width-nav);
     columns: 6;
 }
 
 nav > a > button {
+    top: 0.5vh;
     background-color: var(--cor1);
     color: whitesmoke;
     font-family: var(--fonte6);
@@ -78,43 +107,37 @@ nav > a > button:hover{
 
 nav > a > button > h2 {
     position: relative;
-    top: 2.5vh;
+    bottom: var(--position-h2-btn-nav-bottom);
 }
 
 .seletor-1 {
     position: absolute;
-    top: 0.5vh;
-    left: 0.4vw;
+    left:var(--position-left-btn-seletor-1);
 }
 
 .seletor-2 {
     position: absolute;
-    top: 0.5vh;
-    left: 16.8vw;
+    left: var(--position-left-btn-seletor-2);
 }
 
 .seletor-3 {
     position: absolute;
-    top: 0.5vh;
-    left: 33.1vw;
+    left: var(--position-left-btn-seletor-3);
 }
 
 .seletor-4 {
     position: absolute;
-    top: 0.5vh;
-    left: 49.4vw;
+    left: var(--position-left-btn-seletor-4);
 }
 
 .seletor-5 {
     position: absolute;
-    top: 0.5vh;
-    left: 65.6vw;
+    left: var(--position-left-btn-seletor-5);
 }
 
 .seletor-6 {
     position: absolute;
-    top: 0.5vh;
-    left: 81.9vw;
+    left: var(--position-left-btn-seletor-6);
 }
 
 /*Cabeçalho*/ /*Revisado 18/06/22*/
@@ -123,9 +146,9 @@ header {
     top: 6.2vh;
     background-color: whitesmoke;
     font-family: var(--fonte1);
-    font-size: 1em;
+    font-size: 0.9em;
     height: 45vh;
-    width: 96vw;/*Test de calculo*/
+    width: var(--width-header);
     padding: 0.5vh 0.5vw;
     border: 1vh solid var(--cor1);
 }
@@ -133,8 +156,8 @@ header {
 .introducao {
     text-align: left;
     columns: 3;
+    height: 25vh;
     padding: 0.5vh 0.5vw;
-    
 }
 
 .redes-contatos {
@@ -186,7 +209,9 @@ header > div > div > a:hover {
 }
 
 .codewars > a > img:hover {
-    background-color: var(--cor3);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1vh;
+    box-shadow: 0px 0px 5px black;
 }
 
 /*OLHAR - 06/22*/
@@ -403,7 +428,7 @@ main {
     position: absolute;
     background-color: var(--cor6);
     height: 7vh;
-    width: 98.2vw;
+    width: var(--width-navegador);
     columns: 6;
 }
 
@@ -429,7 +454,7 @@ main {
 
 .sele-1 {
     position: absolute;
-    left: 0.1vw;
+    left: var(--position-HC-btn-left);
     background-color: var(--background-selecao-HC);
     height: var(--height-selecao-HC);
     border: var(--bdr-selecao-HC);
@@ -441,6 +466,10 @@ main {
     left: var(--position-main-btn-html-p-left);
 }
 
+.sele-1:hover {
+    background-color: var(--cor2);
+}
+
 .sele-2 {
     position: absolute;
     left: 16.6vw;
@@ -448,6 +477,10 @@ main {
     height: var(--height-selecao-JS);
     border: var(--bdr-selecao-JS);
     border-radius: var(--bdr-rad-selecao-JS)
+}
+
+.sele-2:hover {
+    background-color: var(--cor2);
 }
 
 .sele-3 {
@@ -459,6 +492,10 @@ main {
     border-radius: var(--bdr-rad-selecao-csharp)
 }
 
+.sele-3:hover {
+    background-color: var(--cor2);
+}
+
 .sele-4 {
     position: absolute;
     left: 49.5vw;
@@ -466,6 +503,10 @@ main {
     height: var(--height-selecao-sql);
     border: var(--bdr-selecao-sql);
     border-radius: var(--bdr-rad-selecao-sql)
+}
+
+.sele-4:hover {
+    background-color: var(--cor2);
 }
 
 .sele-5 {
@@ -477,13 +518,21 @@ main {
     border-radius: var(--bdr-rad-selecao-python)
 }
 
+.sele-5:hover {
+    background-color: var(--cor2);
+}
+
 .sele-6 {
     position: absolute;
-    left: 82.3vw;
+    left: var(--position-react-btn-left);
     background-color: var(--background-selecao-react);
     height: var(--height-selecao-react);
     border: var(--bdr-selecao-python);
     border-radius: var(--bdr-rad-selecao-react)
+}
+
+.sele-6:hover {
+    background-color: var(--cor2);
 }
 
 
@@ -499,8 +548,8 @@ main {
     text-align: left;
     text-shadow: 1px 1px 5px black;
     background-color: var(--cor2);
-    width: 96.4vw;
     height: 240vh;
+    width: var(--width-section);
     padding: 1vh 0.5vw;
 }
 
@@ -513,7 +562,6 @@ main {
     text-align: left;
     text-shadow: 1px 1px 5px black;
     background-color: var(--cor2);
-    width: 96.8vw;
     height: 240vh;
     padding: 1vh 0.5vw;
 }
@@ -652,7 +700,7 @@ footer {
     top: 306.2vh;
     left: 0vw;
     height: 5vh;
-    width: 98.2vw;
+    width: var(--width-footer);
     background-color: var(--cor1);
     font-family: var(--fonte2);
     padding: 1vh 0vw;
