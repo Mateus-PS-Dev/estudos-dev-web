@@ -20,8 +20,8 @@
     --cor1: #0a8c78;/*Cor perfil*/
     --cor2: #3C4544;/*Cor perfil*/
     --cor3: #161A19;/*Cor perfil*/
-    --cor4: #8C7318;
-    --cor5: #403201;
+    --cor4: #c7a838;
+    --cor5: #554300;
     --cor6: #06594D;/*Cor perfil*/
     --cor7: #A63000;
     --cor8: #591E06;
@@ -34,7 +34,7 @@
     --fonte6: 'Syne Mono', monospace;
 }
 
-.formato-16d9{
+#formato-16d9{
     --position-left-btn-seletor-1: 0.4vw;
     --position-left-btn-seletor-2: 16.8vw;
     --position-left-btn-seletor-3: 33.1vw;
@@ -61,7 +61,7 @@
     --colunas-img-destaques: 2;
 }
 
-.formato-4d3 {
+#formato-4d3 {
     --position-left-btn-seletor-1: 0.4vw;
     --position-left-btn-seletor-2: 16.8vw;
     --position-left-btn-seletor-3: 33.1vw;
@@ -157,6 +157,26 @@ nav > a > button > h2 {
 .seletor-6 {
     position: absolute;
     left: var(--position-left-btn-seletor-6);
+    top: 0.5vh;
+    background-color: var(--cor1);
+    color: whitesmoke;
+    font-family: var(--fonte6);
+    text-shadow: 0.5px 0.5px 5px black;
+    height: 5vh;
+    width: 16vw;
+    border: 0.4vh solid var(--cor6);
+    border-radius: 1vh;
+    box-shadow: 0px 0px 3px black;
+}
+
+.seletor-6 > p {
+    position: relative;
+    bottom: 1.75vh;
+    right: 0.5vw;
+}
+
+.seletor-6 > p > input {
+    width: 10vw;
 }
 
 /*Cabeçalho*/ /*Revisado 18/06/22*/
@@ -256,6 +276,29 @@ header > div > div > a:hover {
 
 /*Area de reação 2*/
 .selecao-destaques {
+    --position-left-des: 0.3vw;
+    --position-right-des: inherit;
+    --position-left-selecao-des: inherit;
+    --position-right-selecao-des: 36.9vw;
+
+    --position-left-rep: inherit;
+    --position-right-rep: 18.7vw;
+    --position-left-selecao-rep: inherit;
+    --position-right-selecao-rep: 18.7vw;
+
+    --position-left-quali: inherit;
+    --position-right-quali: 0.2vw;
+    --position-left-selecao-quali: inherit;
+    --position-right-selecao-quali: 0.2vw;
+
+    --display-destaques: block;
+    --display-repositorio: none;
+    --display-qualificacoes: none;
+
+    --display-mini-destaques: none;
+    --display-mini-repositorio: block;
+    --display-mini-qualificacoes: block;
+
     --background-selecao-destaques: var(--cor7);
     --background-selecao-rep-estudos: var(--cor3);
     --background-selecao-qualificacoes: var(--cor3);
@@ -264,16 +307,47 @@ header > div > div > a:hover {
     --height-selecao-rep-estudos: 6vh;
     --height-selecao-qualificacoes: 6vh;
 
+    --width-section-destaques: 60.2vw;
+    --width-section-repositorio: 17vw;
+    --width-section-qualificacoes: 17vw;
+
     --bdr-selecao-destaques: 0.5vh solid var(--cor3);
     --bdr-selecao-rep-estudos: none;
     --bdr-selecao-qualificacoes: none;
+
+    --bdr-rad-SE-destaques: 3vh;
+    --bdr-rad-SD-repositorio: none;
+    --bdr-rad-SD-qualificacoes: none;
 
     --bdr-rad-selecao-destaques: 1vh 1vh 0vh 0vh;
     --bdr-rad-selecao-rep-estudos: 1vh 1vh 1vh 1vh;
     --bdr-rad-selecao-qualificacoes: 1vh 1vh 1vh 1vh;
 }
 
-.selecao-rep-estudos {
+.selecao-repositorio{
+    --position-left-des: 0.45vw;
+    --position-right-des:inherit;
+    --position-left-selecao-des: 0.2vw;
+    --position-right-selecao-des: inherit;
+
+    --position-left-rep: 18.7vw;
+    --position-right-rep: inherit;
+    --position-left-selecao-rep: 18.45vw;
+    --position-right-selecao-rep: inherit;
+
+    --position-left-quali: inheit;
+    --position-right-quali: 0.2vw;
+    --position-left-selecao-quali: inheit;
+    --position-right-selecao-quali: 0.2vw;
+
+    --display-destaques: none;
+    --display-repositorio: block;
+    --display-qualificacoes: none;
+
+    --display-mini-destaques: block;
+    --display-mini-repositorio: none;
+    --display-mini-qualificacoes: block;
+
     --background-selecao-destaques: var(--cor3);
     --background-selecao-rep-estudos: var(--cor2);
     --background-selecao-qualificacoes: var(--cor3);
@@ -282,9 +356,17 @@ header > div > div > a:hover {
     --height-selecao-rep-estudos: 8vh;
     --height-selecao-qualificacoes: 6vh;
 
+    --width-section-destaques: 17vw;
+    --width-section-repositorio: 60.2vw;
+    --width-section-qualificacoes: 17vw;
+
     --bdr-selecao-destaques: none;
     --bdr-selecao-rep-estudos: 0.5vh solid var(--cor3);
     --bdr-selecao-qualificacoes: none;
+
+    --bdr-rad-SE-destaques: none;
+    --bdr-rad-SD-repositorio: 3vh;
+    --bdr-rad-SD-qualificacoes: none;
 
     --bdr-rad-selecao-destaques: 1vh 1vh 1vh 1vh;
     --bdr-rad-selecao-rep-estudos: 1vh 1vh 0vh 0vh;
@@ -292,6 +374,29 @@ header > div > div > a:hover {
 }
 
 .selecao-qualificacoes {
+    --position-left-des: 0.45vw;
+    --position-right-des: inherit;
+    --position-left-selecao-des: 0.2vw;
+    --position-right-selecao-des: inherit;
+
+    --position-left-rep: 18.7vw;
+    --position-right-rep: inherit;
+    --position-left-selecao-rep: 18.7vw;
+    --position-right-selecao-rep: inherit;
+
+    --position-left-quali: inherit;
+    --position-right-quali: 0.4vw;
+    --position-left-selecao-quali: 36.8vw;
+    --position-right-selecao-quali: inherit;
+
+    --display-destaques: none;
+    --display-repositorio: none;
+    --display-qualificacoes: block;
+
+    --display-mini-destaques: block;
+    --display-mini-repositorio: block;
+    --display-mini-qualificacoes: none;
+
     --background-selecao-destaques: var(--cor3);
     --background-selecao-rep-estudos: var(--cor3);
     --background-selecao-qualificacoes: var(--cor4);
@@ -300,9 +405,17 @@ header > div > div > a:hover {
     --height-selecao-rep-estudos: 6vh;
     --height-selecao-qualificacoes: 8vh;
 
+    --width-section-destaques: 17vw;
+    --width-section-repositorio: 17vw;
+    --width-section-qualificacoes: 60.2vw;
+
     --bdr-selecao-destaques: none;
     --bdr-selecao-rep-estudos: none;
     --bdr-selecao-qualificacoes: 0.5vh solid var(--cor3);
+
+    --bdr-rad-SE-destaques: none;
+    --bdr-rad-SD-repositorio: none;
+    --bdr-rad-SD-qualificacoes: 3vh;
 
     --bdr-rad-selecao-destaques: 1vh 1vh 1vh 1vh;
     --bdr-rad-selecao-rep-estudos: 1vh 1vh 1vh 1vh;
@@ -333,7 +446,7 @@ main {
     font-weight: bold;
     text-align: center;
     text-shadow: 1px 1px 5px black;
-    width: 20vw;
+    width: 18vw;
 }
 
 .navegador > button > p {
@@ -343,7 +456,8 @@ main {
 
 .sele-1 {
     position: absolute;
-    left: 0vw;
+    left: var(--position-left-selecao-des);
+    right: var(--position-right-selecao-des);
     background-color: var(--background-selecao-destaques);
     height: var(--height-selecao-destaques);
     border: var(--bdr-selecao-destaques);
@@ -356,7 +470,8 @@ main {
 
 .sele-2 {
     position: absolute;
-    left: 40vw;
+    left: var(--position-left-selecao-rep);
+    right: var(--position-right-selecao-rep);
     background-color: var(--background-selecao-rep-estudos);
     height: var(--height-selecao-rep-estudos);
     border: var(--bdr-selecao-rep-estudos);
@@ -369,7 +484,8 @@ main {
 
 .sele-3 {
     position: absolute;
-    right: 0.1vw;
+    left: var(--position-left-selecao-quali);
+    right: var(--position-right-selecao-quali);
     background-color: var(--background-selecao-qualificacoes);
     height: var(--height-selecao-qualificacoes);
     border: var(--bdr-selecao-qualificacoes);
@@ -388,7 +504,6 @@ section {
     font-size: var(--font-size-sections);
     text-align: center;
     text-shadow: 1px 1px 5px black;
-    width: 31.4vw;
     height: 105vh;
     padding: 1vh 0.5vw;
 }
@@ -396,11 +511,15 @@ section {
 /**Seção de Destaques:**/ /*REVISADO - 18/06/22*/
 .destaques {
     position: absolute;
-    left: 0.2vw;
+    left: var(--position-left-des);
+    right: var(--position-right-des);
     background-image: linear-gradient(to bottom, var(--cor7), var(--cor8));
+    width: var(--width-section-destaques);
+    border-top-left-radius: var(--bdr-rad-SE-destaques);
 }
 
 .imgs-destaques {
+    display: var(--display-destaques);
     columns: 2;
 }
 
@@ -446,11 +565,15 @@ section {
 /**Seção de Repositorio:**/ /*REVISADO - 18/06/22*/
 .repositorio {
     position: absolute;
-    left: var(--position-section-RE-left);
+    left: var(--position-left-rep);
+    right: var(--position-right-rep);
     background-color: var(--cor2);
+    width: var(--width-section-repositorio);
+    border-top-right-radius: var(--bdr-rad-SD-repositorio);
 }
 
 .imgs-repositorio {
+    display: var(--display-repositorio);
     columns: 2;
 }
 
@@ -507,11 +630,15 @@ section {
 /**Seção de qualificações:**/ /*Revisado - 18/06/22*/
 .qualificacoes {
     position: absolute;
-    right: 0.2vw;
+    left: var(--position-left-quali);
+    right: var(--position-right-quali);
     background-color: var(--cor4);
+    width: var(--width-section-qualificacoes);
+    border-top-right-radius: var(--bdr-rad-SD-qualificacoes);
 }
 
 .artigos-qualificacoes {
+    display: var(--display-qualificacoes);
     columns: 1;
 }
 

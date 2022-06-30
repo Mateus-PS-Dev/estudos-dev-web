@@ -1,3 +1,5 @@
+'use strict';
+
 //Declaração das Constantes de Cor de Fundo:
 const switcherBgBlue = document.querySelector('.btn-blue');
 const switcherBgRed = document.querySelector('.btn-red');

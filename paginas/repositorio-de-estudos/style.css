@@ -138,6 +138,26 @@ nav > a > button > h2 {
 .seletor-6 {
     position: absolute;
     left: var(--position-left-btn-seletor-6);
+    top: 0.5vh;
+    background-color: var(--cor1);
+    color: whitesmoke;
+    font-family: var(--fonte6);
+    text-shadow: 0.5px 0.5px 5px black;
+    height: 5vh;
+    width: 16vw;
+    border: 0.4vh solid var(--cor6);
+    border-radius: 1vh;
+    box-shadow: 0px 0px 3px black;
+}
+
+.seletor-6 > p {
+    position: relative;
+    bottom: 1.75vh;
+    right: 0.5vw;
+}
+
+.seletor-6 > p > input {
+    width: 10vw;
 }
 
 /*Cabeçalho*/ /*Revisado 18/06/22*/
