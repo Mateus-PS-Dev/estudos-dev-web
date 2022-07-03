@@ -3,62 +3,61 @@
 
 /*Codigo para navegar entre seções em destaque*/
 const chaveClasseDestaques = document.querySelector(".sele-1");
-const chaveClasseRepositorio = document.body.querySelector(".sele-2");
+const chaveClasseRepositorio = document.querySelector(".sele-2");
 const chaveClasseQualificacoes = document.querySelector(".sele-3");
 
-const nomeClasse = document.body.className;
+const nomeClasse = document.body.classList;
 
-chaveClasseDestaques.addEventListener( 'click', function() {    
-    
-    switch (true)
+chaveClasseRepositorio.addEventListener( 'click' , function() {
+    if (nomeClasse == "selecao-destaques"){
+        document.body.classList.remove("selecao-destaques");
+        document.body.classList.toggle("selecao-repositorio");
+    } 
+    else if (nomeClasse == "selecao-qualificacoes")
     {
-        case (nomeClasse == "selecao-repositorio"):
-            document.body.classList.toggle("selecao-destaques");
-        break;
-        case (nomeClasse == "selecao-qualificacoes"):
-            document.body.classList.toggle("selecao-destaques");
-        break;
-        case (nomeClasse =! "selecao-destaques"):
-            document.body.classList.toggle("selecao-destaques");
-        break;
-        default :
-        document.body.classList.toggle("selecao-destaques");//inutil até o momento
+        document.body.classList.remove("selecao-qualificacoes");
+        document.body.classList.toggle("selecao-repositorio");
+    } 
+    else
+    {
+        document.body.classList.remove("selecao-repositorio");
+        document.body.classList.toggle("selecao-destaques");
     }
 });
 
-chaveClasseRepositorio.addEventListener( 'click', function() {
-
-    switch (true)
+chaveClasseQualificacoes.addEventListener( 'click' , function() {
+    if (nomeClasse == "selecao-repositorio"){
+        document.body.classList.remove("selecao-repositorio");
+        document.body.classList.toggle("selecao-qualificacoes");
+    } 
+    else if (nomeClasse == "selecao-destaques")
     {
-        case (nomeClasse == "selecao-destaques"):
-            document.body.classList.toggle("selecao-repositorio");
-        break;
-        case (nomeClasse == "selecao-qualificacoes"):
-            document.body.classList.toggle("selecao-repositorio");
-        break;
-        case (nomeClasse =! "selecao-repositorio"):
-            document.body.classList.toggle("selecao-repositorio");
-        break;
-        default :
-        document.body.classList.toggle("selecao-repositorio");//inutil até o momento
+        document.body.classList.remove("selecao-destaques");
+        document.body.classList.toggle("selecao-qualificacoes");
+    }
+    else 
+    {
+        document.body.classList.remove("selecao-qualificacoes");
+        document.body.classList.toggle("selecao-repositorio"); 
     }   
 });
 
-chaveClasseQualificacoes.addEventListener( 'click', function() {
-
-    switch (true)
+chaveClasseDestaques.addEventListener( 'click' , function() {
+    if (nomeClasse == "selecao-repositorio"){
+        document.body.classList.remove("selecao-repositorio");
+        document.body.classList.toggle("selecao-destaques");
+    } 
+    else if (nomeClasse == "selecao-qualificacoes")
     {
-        case (nomeClasse == "selecao-destaques"):
-            document.body.classList.toggle("selecao-qualificacoes");
-        break;
-        case (nomeClasse == "selecao-repositorio"):
-            document.body.classList.toggle("selecao-qualificacoes");
-        break;
-        case (nomeClasse =! "selecao-qualificacoes"):
-            document.body.classList.toggle("selecao-qualificacoes");
-        break;
-        case (nomeClasse == "selecao-qualificacoes"):
-            document.body.classList.toggle("selecao-qualificacoes");
-        break;
+        document.body.classList.remove("selecao-qualificacoes");
+        document.body.classList.toggle("selecao-destaques");
     }
+    else 
+    {
+        document.body.classList.remove("selecao-destaques");
+        document.body.classList.toggle("selecao-repositorio");
+    }
+    
 });
+
+
