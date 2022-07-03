@@ -22,7 +22,7 @@ const chaveClasseTrabalhosA4 = document.querySelector(".seletor-4n3");
 const chaveClasseTrabalhosA5 = document.querySelector(".seletor-5n3");
 const chaveClasseTrabalhosA6 = document.querySelector(".seletor-6n3");
 
-const nomeClasse = document.body.className;
+const nomeClasse = document.body.classList;
 
 
 chaveClasseCursos.addEventListener( 'click' , function() {
