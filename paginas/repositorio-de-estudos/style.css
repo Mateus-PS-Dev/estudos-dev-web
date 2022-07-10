@@ -26,7 +26,7 @@
 }
 
 /*Area de reação 1*/
-.formato-16d9{
+#formato-16d9{
     --position-left-btn-seletor-1: 0.4vw;
     --position-left-btn-seletor-2: 16.8vw;
     --position-left-btn-seletor-3: 33.1vw;
@@ -48,7 +48,7 @@
     --width-footer: 98.6vw;
 }
 
-.formato-4d3 {
+#formato-4d3 {
     --position-left-btn-seletor-1: 0.4vw;
     --position-left-btn-seletor-2: 16.8vw;
     --position-left-btn-seletor-3: 33.1vw;
@@ -78,7 +78,7 @@ body {
 }
 
 /**Navegador**/ /*Revisado - 18/06/22*/
-nav {
+.top {
     position: absolute;
     top: 0vh;
     background-color: var(--cor1);
@@ -88,7 +88,7 @@ nav {
     columns: 6;
 }
 
-nav > a > button {
+.top > a > button {
     top: 0.5vh;
     background-color: var(--cor1);
     color: whitesmoke;
@@ -101,11 +101,11 @@ nav > a > button {
     box-shadow: 0px 0px 3px black;
 }
 
-nav > a > button:hover{
+.top > a > button:hover{
     box-shadow: 0px 0px 3px whitesmoke;
 }
 
-nav > a > button > h2 {
+.top > a > button > h2 {
     position: relative;
     bottom: var(--position-h2-btn-nav-bottom);
 }
@@ -257,7 +257,7 @@ header > div > div > a:hover {
 
 
 /*Area de reação 2*/
-.selecao-html-css {
+.selecao-section-1 {
     --background-selecao-HC: var(--cor2);
     --background-selecao-JS: var(--cor3);
     --background-selecao-csharp: var(--cor3);
@@ -287,7 +287,7 @@ header > div > div > a:hover {
     --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
 }
 
-.selecao-js {
+.selecao-section-2 {
     --background-selecao-HC: var(--cor3);
     --background-selecao-JS: var(--cor2);
     --background-selecao-csharp: var(--cor3);
@@ -317,7 +317,7 @@ header > div > div > a:hover {
     --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
 }
 
-.selecao-csharp {
+.selecao-section-3 {
     --background-selecao-HC: var(--cor3);
     --background-selecao-JS: var(--cor3);
     --background-selecao-csharp: var(--cor2);
@@ -347,7 +347,7 @@ header > div > div > a:hover {
     --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
 }
 
-.selecao-sql {
+.selecao-section-4 {
     --background-selecao-HC: var(--cor3);
     --background-selecao-JS: var(--cor3);
     --background-selecao-csharp: var(--cor3);
@@ -377,7 +377,7 @@ header > div > div > a:hover {
     --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
 }
 
-.selecao-python {
+.selecao-section-5 {
     --background-selecao-HC: var(--cor3);
     --background-selecao-JS: var(--cor3);
     --background-selecao-csharp: var(--cor3);
@@ -407,7 +407,7 @@ header > div > div > a:hover {
     --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
 }
 
-.selecao-react {
+.selecao-section-6 {
     --background-selecao-HC: var(--cor3);
     --background-selecao-JS: var(--cor3);
     --background-selecao-csharp: var(--cor3);
@@ -444,7 +444,7 @@ main {
 }
 
 /*Navegador de artigos*/
-.navegador {
+.navegador-1 {
     position: absolute;
     background-color: var(--cor6);
     height: 7vh;
@@ -452,7 +452,7 @@ main {
     columns: 6;
 }
 
-.navegador > button {
+.navegador-1 > button {
     top: 0.5vh;
     font: 1.1em var(--fonte1);
     color: whitesmoke;
@@ -461,104 +461,101 @@ main {
     width: 15.8vw;
 }
 
-.navegador > button > p {
+.navegador-1 > button > p {
     position: relative;
     bottom: 1.5vh;
 }
 
-.navegador > button > img {
+.navegador-1 > button > img {
     position: absolute;
     top: 0.8vh;
     left: 1vw;
 }
 
-.sele-1 {
+.seletor-1n1 {
     position: absolute;
     left: var(--position-HC-btn-left);
     background-color: var(--background-selecao-HC);
     height: var(--height-selecao-HC);
     border: var(--bdr-selecao-HC);
-    border-radius: var(--bdr-rad-selecao-HC)
+    border-radius: var(--bdr-rad-selecao-HC);
 }
 
-.sele-1 > p {
+.seletor-1n1 > p {
     position: relative;
     left: var(--position-main-btn-html-p-left);
 }
 
-.sele-1:hover {
+.seletor-1n1:hover {
     background-color: var(--cor2);
 }
 
-.sele-2 {
+.seletor-2n1 {
     position: absolute;
     left: 16.6vw;
     background-color: var(--background-selecao-JS);
     height: var(--height-selecao-JS);
     border: var(--bdr-selecao-JS);
-    border-radius: var(--bdr-rad-selecao-JS)
+    border-radius: var(--bdr-rad-selecao-JS);
 }
 
-.sele-2:hover {
+.seletor-2n1:hover {
     background-color: var(--cor2);
 }
 
-.sele-3 {
+.seletor-3n1 {
     position: absolute;
     left: 33vw;
     background-color: var(--background-selecao-csharp);
     height: var(--height-selecao-csharp);
     border: var(--bdr-selecao-csharp);
-    border-radius: var(--bdr-rad-selecao-csharp)
+    border-radius: var(--bdr-rad-selecao-csharp);
 }
 
-.sele-3:hover {
+.seletor-3n1:hover {
     background-color: var(--cor2);
 }
 
-.sele-4 {
+.seletor-4n1 {
     position: absolute;
     left: 49.5vw;
     background-color: var(--background-selecao-sql);
     height: var(--height-selecao-sql);
     border: var(--bdr-selecao-sql);
-    border-radius: var(--bdr-rad-selecao-sql)
+    border-radius: var(--bdr-rad-selecao-sql);
 }
 
-.sele-4:hover {
+.seletor-4n1:hover {
     background-color: var(--cor2);
 }
 
-.sele-5 {
+.seletor-5n1 {
     position: absolute;
     left: 65.9vw;
     background-color: var(--background-selecao-python);
     height: var(--height-selecao-python);
     border: var(--bdr-selecao-python);
-    border-radius: var(--bdr-rad-selecao-python)
+    border-radius: var(--bdr-rad-selecao-python);
 }
 
-.sele-5:hover {
+.seletor-5n1:hover {
     background-color: var(--cor2);
 }
 
-.sele-6 {
+.seletor-6n1 {
     position: absolute;
     left: var(--position-react-btn-left);
     background-color: var(--background-selecao-react);
     height: var(--height-selecao-react);
     border: var(--bdr-selecao-python);
-    border-radius: var(--bdr-rad-selecao-react)
+    border-radius: var(--bdr-rad-selecao-react);
 }
 
-.sele-6:hover {
+.seletor-6n1:hover {
     background-color: var(--cor2);
 }
 
-
-
-/**Seção de Repositorio:**//*REVISADO - 18/06/22*/
-.repositorio {
+section {
     position: absolute;
     top: 8vh;
     left: 0.4vw;
@@ -573,23 +570,11 @@ main {
     padding: 1vh 0.5vw;
 }
 
-.html-css {
-    position: absolute;
-    left: 0.4vw;
-    color: whitesmoke;
-    font-family: var(--fonte6);
-    font-size: 1.2em;
-    text-align: left;
-    text-shadow: 1px 1px 5px black;
-    background-color: var(--cor2);
-    height: 240vh;
-    padding: 1vh 0.5vw;
-}
-
 .html {
     position: absolute;
     top: 3vh;
     left: 2vw;
+    z-index: 1;
     height: 140vh;
     width: 45.4vw;
 }
@@ -598,6 +583,7 @@ main {
     position: absolute;
     top: var(--position-div-css);
     left: 2vw;
+    z-index: 1;
     height: 60vh;
     width: 45.4vw
 }
@@ -606,6 +592,7 @@ main {
     position: absolute;
     top: 13vh;
     right: 2vw;
+    z-index: 1;
     background-color: whitesmoke;
     font-family: var(--fonte1);
     color: black;
@@ -621,6 +608,7 @@ main {
     position: absolute;
     top: var(--position-div-texto-css);
     right: 2vw;
+    z-index: 1;
     background-color: whitesmoke;
     font-family: var(--fonte1);
     color: black;
@@ -662,57 +650,6 @@ main {
 
 .css > ol > ul > li > a:visited:hover {
     color: black;
-}
-
-/*ARTIGOS*/
-.js > a > img {
-    position: absolute;
-    top: 45.5vh;
-    left: 4vw;
-    background-color: var(--cor3);
-    box-shadow: 0px 0px 10px black;
-    border: 5px solid var(--cor6);
-    border-radius: 10px;
-}
-
-article.python > a > img {
-    position: absolute;
-    top: 76vh;
-    left: 4vw;
-    background-color: var(--cor3);
-    box-shadow: 0px 0px 10px black;
-    border: 5px solid var(--cor6);
-    border-radius: 10px;
-}
-
-article.csharp > a > img {
-    position: absolute;
-    top: 15vh;
-    right: 4vw;
-    background-color: var(--cor3);
-    box-shadow: 0px 0px 10px black;
-    border: 5px solid var(--cor6);
-    border-radius: 10px;
-}
-
-article.sqlserver > a > img {
-    position: absolute;
-    top: 45.5vh;
-    right: 4vw;
-    background-color: var(--cor3);
-    box-shadow: 0px 0px 10px black;
-    border: 5px solid var(--cor6);
-    border-radius: 10px;
-}
-
-article.react > a > img {
-    position: absolute;
-    top: 76vh;
-    right: 4vw;
-    background-color: var(--cor3);
-    box-shadow: 0px 0px 10px black;
-    border: 5px solid var(--cor6);
-    border-radius: 10px;
 }
 
 footer {
