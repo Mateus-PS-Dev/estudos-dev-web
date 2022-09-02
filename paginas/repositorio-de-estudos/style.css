@@ -35,9 +35,9 @@
     --position-left-btn-seletor-6: 82.3vw;
     --position-h2-btn-nav-bottom: 2.8vh;
     --position-img-codewars-left: 0vw;
-    --position-HC-btn-left: 0.15vw;
-    --position-react-btn-left: 82.6vw;
-    --position-main-btn-html-p-left: 1vw;
+    --position-btn-seletor-sessao1-left: 0.15vw;
+    --position-btn-seletor-sessao6-left: 82.65vw;
+    --position-p-btn-seletor-sessao1-left: 1vw;
     --position-div-css: 150vh;
     --position-div-texto-css: 161vh;
 
@@ -57,9 +57,9 @@
     --position-left-btn-seletor-6: 81.9vw;
     --position-h2-btn-nav-bottom: 2.5vh;
     --position-img-codewars-left: -10vw;
-    --position-HC-btn-left: 0.1vw;
-    --position-react-btn-left: 82.3vw;
-    --position-main-btn-html-p-left: 2.5vw;
+    --position-btn-seletor-sessao1-left: 0.1vw;
+    --position-btn-seletor-sessao6-left: 82.3vw;
+    --position-p-btn-seletor-sessao1-left: 2.5vw;
     --position-div-css: 155vh;
     --position-div-texto-css: 166vh;
 
@@ -258,183 +258,231 @@ header > div > div > a:hover {
 
 /*Area de reação 2*/
 .selecao-section-1 {
-    --background-selecao-HC: var(--cor2);
-    --background-selecao-JS: var(--cor3);
-    --background-selecao-csharp: var(--cor3);
-    --background-selecao-sql: var(--cor3);
-    --background-selecao-python: var(--cor3);
-    --background-selecao-react: var(--cor3);
+    --background-seletor-sessao1: var(--cor2);
+    --background-seletor-sessao2: var(--cor3);
+    --background-seletor-sessao3: var(--cor3);
+    --background-seletor-sessao4: var(--cor3);
+    --background-seletor-sessao5: var(--cor3);
+    --background-seletor-sessao6: var(--cor3);
 
-    --height-selecao-HC: 8vh;
-    --height-selecao-JS: 6vh;
-    --height-selecao-csharp: 6vh;
-    --height-selecao-sql: 6vh;
-    --height-selecao-python: 6vh;
-    --height-selecao-react: 6vh;
+    --height-seletor-sessao1: 8vh;
+    --height-seletor-sessao2: 6vh;
+    --height-seletor-sessao3: 6vh;
+    --height-seletor-sessao4: 6vh;
+    --height-seletor-sessao5: 6vh;
+    --height-seletor-sessao6: 6vh;
 
-    --bdr-selecao-HC: 0.5vh solid var(--cor3);
-    --bdr-selecao-JS: none;
-    --bdr-selecao-csharp: none;
-    --bdr-selecao-sql: none;
-    --bdr-selecao-python: none;
-    --bdr-selecao-react: none;
+    --bdr-seletor-sessao1: 0.5vh solid var(--cor3);
+    --bdr-seletor-sessao2: none;
+    --bdr-seletor-sessao3: none;
+    --bdr-seletor-sessao4: none;
+    --bdr-seletor-sessao5: none;
+    --bdr-seletor-sessao6: none;
 
-    --bdr-rad-selecao-HC: 1vh 1vh 0vh 0vh;
-    --bdr-rad-selecao-JS: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-csharp: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-sql: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-python: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao1: 1vh 1vh 0vh 0vh;
+    --bdr-rad-seletor-sessao2: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao3: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao4: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao5: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao6: 1vh 1vh 1vh 1vh;
+
+    /*Área Section*/
+    --display-sessao-1: block;
+    --display-sessao-2: none;
+    --display-sessao-3: none;
+    --display-sessao-4: none;
+    --display-sessao-5: none;
+    --display-sessao-6: none;
 }
 
 .selecao-section-2 {
-    --background-selecao-HC: var(--cor3);
-    --background-selecao-JS: var(--cor2);
-    --background-selecao-csharp: var(--cor3);
-    --background-selecao-sql: var(--cor3);
-    --background-selecao-python: var(--cor3);
-    --background-selecao-react: var(--cor3);
+    --background-seletor-sessao1: var(--cor3);
+    --background-seletor-sessao2: var(--cor2);
+    --background-seletor-sessao3: var(--cor3);
+    --background-seletor-sessao4: var(--cor3);
+    --background-seletor-sessao5: var(--cor3);
+    --background-seletor-sessao6: var(--cor3);
 
-    --height-selecao-HC: 6vh;
-    --height-selecao-JS: 8vh;
-    --height-selecao-csharp: 6vh;
-    --height-selecao-sql: 6vh;
-    --height-selecao-python: 6vh;
-    --height-selecao-react: 6vh;
+    --height-seletor-sessao1: 6vh;
+    --height-seletor-sessao2: 8vh;
+    --height-seletor-sessao3: 6vh;
+    --height-seletor-sessao4: 6vh;
+    --height-seletor-sessao5: 6vh;
+    --height-seletor-sessao6: 6vh;
 
-    --bdr-selecao-HC: none;
-    --bdr-selecao-JS: 0.5vh solid var(--cor3);
-    --bdr-selecao-csharp: none;
-    --bdr-selecao-sql: none;
-    --bdr-selecao-python: none;
-    --bdr-selecao-react: none;
+    --bdr-seletor-sessao1: none;
+    --bdr-seletor-sessao2: 0.5vh solid var(--cor3);
+    --bdr-seletor-sessao3: none;
+    --bdr-seletor-sessao4: none;
+    --bdr-seletor-sessao5: none;
+    --bdr-seletor-sessao6: none;
 
-    --bdr-rad-selecao-HC: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-JS: 1vh 1vh 0vh 0vh;
-    --bdr-rad-selecao-csharp: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-sql: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-python: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao1: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao2: 1vh 1vh 0vh 0vh;
+    --bdr-rad-seletor-sessao3: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao4: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao5: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao6: 1vh 1vh 1vh 1vh;
+
+    /*Área Section*/
+    --display-sessao-1: none;
+    --display-sessao-2: block;
+    --display-sessao-3: none;
+    --display-sessao-4: none;
+    --display-sessao-5: none;
+    --display-sessao-6: none;
 }
 
 .selecao-section-3 {
-    --background-selecao-HC: var(--cor3);
-    --background-selecao-JS: var(--cor3);
-    --background-selecao-csharp: var(--cor2);
-    --background-selecao-sql: var(--cor3);
-    --background-selecao-python: var(--cor3);
-    --background-selecao-react: var(--cor3);
+    --background-seletor-sessao1: var(--cor3);
+    --background-seletor-sessao2: var(--cor3);
+    --background-seletor-sessao3: var(--cor2);
+    --background-seletor-sessao4: var(--cor3);
+    --background-seletor-sessao5: var(--cor3);
+    --background-seletor-sessao6: var(--cor3);
 
-    --height-selecao-HC: 6vh;
-    --height-selecao-JS: 6vh;
-    --height-selecao-csharp: 8vh;
-    --height-selecao-sql: 6vh;
-    --height-selecao-python: 6vh;
-    --height-selecao-react: 6vh;
+    --height-seletor-sessao1: 6vh;
+    --height-seletor-sessao2: 6vh;
+    --height-seletor-sessao3: 8vh;
+    --height-seletor-sessao4: 6vh;
+    --height-seletor-sessao5: 6vh;
+    --height-seletor-sessao6: 6vh;
 
-    --bdr-selecao-HC: none;
-    --bdr-selecao-JS: none;
-    --bdr-selecao-csharp: 0.5vh solid var(--cor3);
-    --bdr-selecao-sql: none;
-    --bdr-selecao-python: none;
-    --bdr-selecao-react: none;
+    --bdr-seletor-sessao1: none;
+    --bdr-seletor-sessao2: none;
+    --bdr-seletor-sessao3: 0.5vh solid var(--cor3);
+    --bdr-seletor-sessao4: none;
+    --bdr-seletor-sessao5: none;
+    --bdr-seletor-sessao6: none;
 
-    --bdr-rad-selecao-HC: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-JS: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-csharp: 1vh 1vh 0vh 0vh;
-    --bdr-rad-selecao-sql: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-python: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao1: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao2: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao3: 1vh 1vh 0vh 0vh;
+    --bdr-rad-seletor-sessao4: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao5: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao6: 1vh 1vh 1vh 1vh;
+
+    /*Área Section*/
+    --display-sessao-1: none;
+    --display-sessao-2: none;
+    --display-sessao-3: block;
+    --display-sessao-4: none;
+    --display-sessao-5: none;
+    --display-sessao-6: none;
 }
 
 .selecao-section-4 {
-    --background-selecao-HC: var(--cor3);
-    --background-selecao-JS: var(--cor3);
-    --background-selecao-csharp: var(--cor3);
-    --background-selecao-sql: var(--cor2);
-    --background-selecao-python: var(--cor3);
-    --background-selecao-react: var(--cor3);
+    --background-seletor-sessao1: var(--cor3);
+    --background-seletor-sessao2: var(--cor3);
+    --background-seletor-sessao3: var(--cor3);
+    --background-seletor-sessao4: var(--cor2);
+    --background-seletor-sessao5: var(--cor3);
+    --background-seletor-sessao6: var(--cor3);
 
-    --height-selecao-HC: 6vh;
-    --height-selecao-JS: 6vh;
-    --height-selecao-csharp: 6vh;
-    --height-selecao-sql: 8vh;
-    --height-selecao-python: 6vh;
-    --height-selecao-react: 6vh;
+    --height-seletor-sessao1: 6vh;
+    --height-seletor-sessao2: 6vh;
+    --height-seletor-sessao3: 6vh;
+    --height-seletor-sessao4: 8vh;
+    --height-seletor-sessao5: 6vh;
+    --height-seletor-sessao6: 6vh;
 
-    --bdr-selecao-HC: none;
-    --bdr-selecao-JS: none;
-    --bdr-selecao-csharp: none;
-    --bdr-selecao-sql: 0.5vh solid var(--cor3);
-    --bdr-selecao-python: none;
-    --bdr-selecao-react: none;
+    --bdr-seletor-sessao1: none;
+    --bdr-seletor-sessao2: none;
+    --bdr-seletor-sessao3: none;
+    --bdr-seletor-sessao4: 0.5vh solid var(--cor3);
+    --bdr-seletor-sessao5: none;
+    --bdr-seletor-sessao6: none;
 
-    --bdr-rad-selecao-HC: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-JS: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-csharp: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-sql: 1vh 1vh 0vh 0vh;
-    --bdr-rad-selecao-python: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao1: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao2: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao3: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao4: 1vh 1vh 0vh 0vh;
+    --bdr-rad-seletor-sessao5: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao6: 1vh 1vh 1vh 1vh;
+
+    /*Área Section*/
+    --display-sessao-1: none;
+    --display-sessao-2: none;
+    --display-sessao-3: none;
+    --display-sessao-4: block;
+    --display-sessao-5: none;
+    --display-sessao-6: none;
 }
 
 .selecao-section-5 {
-    --background-selecao-HC: var(--cor3);
-    --background-selecao-JS: var(--cor3);
-    --background-selecao-csharp: var(--cor3);
-    --background-selecao-sql: var(--cor3);
-    --background-selecao-python: var(--cor2);
-    --background-selecao-react: var(--cor3);
+    --background-seletor-sessao1: var(--cor3);
+    --background-seletor-sessao2: var(--cor3);
+    --background-seletor-sessao3: var(--cor3);
+    --background-seletor-sessao4: var(--cor3);
+    --background-seletor-sessao5: var(--cor2);
+    --background-seletor-sessao6: var(--cor3);
 
-    --height-selecao-HC: 6vh;
-    --height-selecao-JS: 6vh;
-    --height-selecao-csharp: 6vh;
-    --height-selecao-sql: 6vh;
-    --height-selecao-python: 8vh;
-    --height-selecao-react: 6vh;
+    --height-seletor-sessao1: 6vh;
+    --height-seletor-sessao2: 6vh;
+    --height-seletor-sessao3: 6vh;
+    --height-seletor-sessao4: 6vh;
+    --height-seletor-sessao5: 8vh;
+    --height-seletor-sessao6: 6vh;
 
-    --bdr-selecao-HC: none;
-    --bdr-selecao-JS: none;
-    --bdr-selecao-csharp: none;
-    --bdr-selecao-sql: none;
-    --bdr-selecao-python: 0.5vh solid var(--cor3);
-    --bdr-selecao-react: none;
+    --bdr-seletor-sessao1: none;
+    --bdr-seletor-sessao2: none;
+    --bdr-seletor-sessao3: none;
+    --bdr-seletor-sessao4: none;
+    --bdr-seletor-sessao5: 0.5vh solid var(--cor3);
+    --bdr-seletor-sessao6: none;
 
-    --bdr-rad-selecao-HC: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-JS: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-csharp: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-sql: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-python: 1vh 1vh 0vh 0vh;
-    --bdr-rad-selecao-react: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao1: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao2: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao3: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao4: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao5: 1vh 1vh 0vh 0vh;
+    --bdr-rad-seletor-sessao6: 1vh 1vh 1vh 1vh;
+
+    /*Área Section*/
+    --display-sessao-1: none;
+    --display-sessao-2: none;
+    --display-sessao-3: none;
+    --display-sessao-4: none;
+    --display-sessao-5: block;
+    --display-sessao-6: none;
 }
 
 .selecao-section-6 {
-    --background-selecao-HC: var(--cor3);
-    --background-selecao-JS: var(--cor3);
-    --background-selecao-csharp: var(--cor3);
-    --background-selecao-sql: var(--cor3);
-    --background-selecao-python: var(--cor3);
-    --background-selecao-react: var(--cor2);
+    --background-seletor-sessao1: var(--cor3);
+    --background-seletor-sessao2: var(--cor3);
+    --background-seletor-sessao3: var(--cor3);
+    --background-seletor-sessao4: var(--cor3);
+    --background-seletor-sessao5: var(--cor3);
+    --background-seletor-sessao6: var(--cor2);
 
-    --height-selecao-HC: 6vh;
-    --height-selecao-JS: 6vh;
-    --height-selecao-csharp: 6vh;
-    --height-selecao-sql: 6vh;
-    --height-selecao-python: 6vh;
-    --height-selecao-react: 8vh;
+    --height-seletor-sessao1: 6vh;
+    --height-seletor-sessao2: 6vh;
+    --height-seletor-sessao3: 6vh;
+    --height-seletor-sessao4: 6vh;
+    --height-seletor-sessao5: 6vh;
+    --height-seletor-sessao6: 8vh;
 
-    --bdr-selecao-HC: none;
-    --bdr-selecao-JS: none;
-    --bdr-selecao-csharp: none;
-    --bdr-selecao-sql: none;
-    --bdr-selecao-python: none;
-    --bdr-selecao-react: 0.5vh solid var(--cor3);
+    --bdr-seletor-sessao1: none;
+    --bdr-seletor-sessao2: none;
+    --bdr-seletor-sessao3: none;
+    --bdr-seletor-sessao4: none;
+    --bdr-seletor-sessao5: none;
+    --bdr-seletor-sessao6: 0.5vh solid var(--cor3);
 
-    --bdr-rad-selecao-HC: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-JS: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-csharp: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-sql: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-python: 1vh 1vh 1vh 1vh;
-    --bdr-rad-selecao-react: 1vh 1vh 0vh 0vh;
+    --bdr-rad-seletor-sessao1: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao2: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao3: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao4: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao5: 1vh 1vh 1vh 1vh;
+    --bdr-rad-seletor-sessao6: 1vh 1vh 0vh 0vh;
+
+    /*Área Section*/
+    --display-sessao-1: none;
+    --display-sessao-2: none;
+    --display-sessao-3: none;
+    --display-sessao-4: none;
+    --display-sessao-5: none;
+    --display-sessao-6: block;
 }
 
 main {
@@ -474,16 +522,16 @@ main {
 
 .seletor-1n1 {
     position: absolute;
-    left: var(--position-HC-btn-left);
-    background-color: var(--background-selecao-HC);
-    height: var(--height-selecao-HC);
-    border: var(--bdr-selecao-HC);
-    border-radius: var(--bdr-rad-selecao-HC);
+    left: var(--position-btn-seletor-sessao1-left);
+    background-color: var(--background-seletor-sessao1);
+    height: var(--height-seletor-sessao1);
+    border: var(--bdr-seletor-sessao1);
+    border-radius: var(--bdr-rad-seletor-sessao1);
 }
 
 .seletor-1n1 > p {
     position: relative;
-    left: var(--position-main-btn-html-p-left);
+    left: var(--position-p-btn-seletor-sessao1-left);
 }
 
 .seletor-1n1:hover {
@@ -493,10 +541,10 @@ main {
 .seletor-2n1 {
     position: absolute;
     left: 16.6vw;
-    background-color: var(--background-selecao-JS);
-    height: var(--height-selecao-JS);
-    border: var(--bdr-selecao-JS);
-    border-radius: var(--bdr-rad-selecao-JS);
+    background-color: var(--background-seletor-sessao2);
+    height: var(--height-seletor-sessao2);
+    border: var(--bdr-seletor-sessao2);
+    border-radius: var(--bdr-rad-seletor-sessao2);
 }
 
 .seletor-2n1:hover {
@@ -506,10 +554,10 @@ main {
 .seletor-3n1 {
     position: absolute;
     left: 33vw;
-    background-color: var(--background-selecao-csharp);
-    height: var(--height-selecao-csharp);
-    border: var(--bdr-selecao-csharp);
-    border-radius: var(--bdr-rad-selecao-csharp);
+    background-color: var(--background-seletor-sessao3);
+    height: var(--height-seletor-sessao3);
+    border: var(--bdr-seletor-sessao3);
+    border-radius: var(--bdr-rad-seletor-sessao3);
 }
 
 .seletor-3n1:hover {
@@ -519,10 +567,10 @@ main {
 .seletor-4n1 {
     position: absolute;
     left: 49.5vw;
-    background-color: var(--background-selecao-sql);
-    height: var(--height-selecao-sql);
-    border: var(--bdr-selecao-sql);
-    border-radius: var(--bdr-rad-selecao-sql);
+    background-color: var(--background-seletor-sessao4);
+    height: var(--height-seletor-sessao4);
+    border: var(--bdr-seletor-sessao4);
+    border-radius: var(--bdr-rad-seletor-sessao4);
 }
 
 .seletor-4n1:hover {
@@ -531,11 +579,11 @@ main {
 
 .seletor-5n1 {
     position: absolute;
-    left: 65.9vw;
-    background-color: var(--background-selecao-python);
-    height: var(--height-selecao-python);
-    border: var(--bdr-selecao-python);
-    border-radius: var(--bdr-rad-selecao-python);
+    left: 66vw;
+    background-color: var(--background-seletor-sessao5);
+    height: var(--height-seletor-sessao5);
+    border: var(--bdr-seletor-sessao5);
+    border-radius: var(--bdr-rad-seletor-sessao5);
 }
 
 .seletor-5n1:hover {
@@ -544,11 +592,11 @@ main {
 
 .seletor-6n1 {
     position: absolute;
-    left: var(--position-react-btn-left);
-    background-color: var(--background-selecao-react);
-    height: var(--height-selecao-react);
-    border: var(--bdr-selecao-python);
-    border-radius: var(--bdr-rad-selecao-react);
+    left: var(--position-btn-seletor-sessao6-left);
+    background-color: var(--background-seletor-sessao6);
+    height: var(--height-seletor-sessao6);
+    border: var(--bdr-seletor-sessao6);
+    border-radius: var(--bdr-rad-seletor-sessao6);
 }
 
 .seletor-6n1:hover {
@@ -568,6 +616,10 @@ section {
     height: 240vh;
     width: var(--width-section);
     padding: 1vh 0.5vw;
+}
+
+.sessao-1 {
+    display: var(--display-sessao-1);
 }
 
 .html {
@@ -650,6 +702,299 @@ section {
 
 .css > ol > ul > li > a:visited:hover {
     color: black;
+}
+
+.sessao-2 {
+    display: var(--display-sessao-2);
+}
+
+.sessao-3 {
+    display: var(--display-sessao-3);
+}
+
+#csharp > article {
+    position: absolute;
+    top: 15vh;
+    left: 2vw;
+    z-index: 12;
+    background-color: whitesmoke;
+    color: black;
+    font-family: var(--fonte1);
+    font-size: medium;
+    text-shadow: none;
+    height: 220vh;
+    width: 92.5vw;
+    padding: 1vh;
+    border-radius: 1vh;
+    outline: 0.5vh solid var(--corCSharp);
+    overflow-y: scroll;
+    box-shadow: 0vh 0vh 2vh black;
+}
+
+#csharp > article > ol > h4 {
+    font-family: var(--fonte6);
+    font-size: large;
+}
+
+h5 {
+    font-family: var(--fonte6);
+    font-size: large;
+}
+
+h6 {
+    font-family: var(--fonte6);
+    font-size: large;
+}
+
+#csharp > article > ol > div {
+    margin-right: 2vw;
+}
+
+.navegador-3 {
+    position: absolute;
+    top: 4vh;
+    left: 2vw;
+    background-color: var(--cor3);
+    height: 11vh;
+    width: 93.5vw;
+    border-radius: 1vh 1vh 0vh 0vh;
+    outline: 0.5vh solid var(--cor3);
+    box-shadow: 0vh 0vh 2vh black;
+}
+
+.navegador-3 > button {
+    position: absolute;
+    top: 0vh;
+    background-color: var(--corCSharp);
+    font: var(--fonte6) 1.2em;
+    color: whitesmoke;
+    height: 11vh;
+    width: 12vw;
+    border: none;
+    border-radius: 1vh 1vh 0vh 0vh;
+    box-shadow: 0vh 0vh 2vh black;
+}
+
+.seletor-1n3 {
+    position: absolute;
+    left: 0vw;
+    z-index: 10;
+}
+
+.seletor-1n3:hover {
+    z-index: 11;
+    border: none;
+}
+
+.seletor-2n3 {
+    position: absolute;
+    left: 9.1vw;
+    z-index: 9;
+}
+
+.seletor-2n3:hover {
+    z-index: 11;
+}
+
+.seletor-2n3 > p {
+    position: relative;
+    bottom: 1.5vh;
+}
+
+.seletor-3n3 {
+    position: absolute;
+    left: 18.15vw;
+    z-index: 8;
+}
+
+.seletor-3n3:hover {
+    z-index: 11;
+}
+
+.seletor-4n3 {
+    position: absolute;
+    left: 27.2vw;
+    z-index: 7;
+}
+
+.seletor-4n3:hover {
+    z-index: 11;
+}
+
+.seletor-5n3 {
+    position: absolute;
+    left: 36.25vw;
+    z-index: 6;
+}
+
+.seletor-5n3:hover {
+    z-index: 11;
+}
+
+.seletor-6n3 {
+    position: absolute;
+    left: 45.3vw;
+    z-index: 5;
+}
+
+.seletor-6n3:hover {
+    z-index: 11;
+}
+
+.seletor-7n3 {
+    position: absolute;
+    left: 54.35vw;
+    z-index: 4;
+}
+
+.seletor-7n3:hover {
+    z-index: 11;
+}
+
+.seletor-8n3 {
+    position: absolute;
+    left: 63.4vw;
+    z-index: 3;
+}
+
+.seletor-8n3:hover {
+    z-index: 11;
+}
+
+.seletor-9n3 {
+    position: absolute;
+    left: 72.45vw;
+    z-index: 2;
+}
+
+.seletor-9n3:hover {
+    z-index: 11;
+}
+
+.seletor-10n3 {
+    position: absolute;
+    left: 81.5vw;
+    z-index: 1;
+}
+
+.seletor-10n3:hover {
+    z-index: 11;
+}
+
+.seletor-10n3 > p {
+    position: relative;
+    bottom: 1.5vh;
+}
+
+.texto-gitbash {
+    background-color: var(--cor3);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    color: green;
+    padding: 2vh;
+    border-radius: 2vh;
+}
+
+.texto-csharp {
+    background-color: var(--cor3);
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    padding: 2vh;
+    border-radius: 2vh;
+}
+
+.texto-csharp > pre {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+.csharp-var {
+    color: #f80053;
+}
+
+.csharp-nome {
+    color: whitesmoke;
+}
+
+.csharp-comment {
+    color: grey;
+}
+
+.csharp-namespace {
+    color: greenyellow;
+}
+
+.csharp-numero {
+    color: rebeccapurple;
+}
+
+.csharp-string {
+    color: darkgoldenrod;
+}
+
+.csharp-bar-1 {
+    color: gold;
+}
+
+.csharp-bar-2 {
+    color: rebeccapurple;
+}
+
+.csharp-bar-3 {
+    color: royalblue;
+}
+
+.selecao-1s3 {
+    display: none;
+}
+
+.selecao-2s3 {
+    display: block;
+}
+
+.selecao-3s3 {
+    display: none;
+}
+
+.selecao-4s3 {
+    display: none;
+}
+
+.selecao-5s3 {
+    display: none;
+}
+
+.selecao-6s3 {
+    display: none;
+}
+
+.selecao-7s3 {
+    display: none;
+}
+
+.selecao-8s3 {
+    display: none;
+}
+
+.selecao-9s3 {
+    display: none;
+}
+
+.selecao-10s3 {
+    display: none;
+}
+
+.sessao-4 {
+    display: var(--display-sessao-4);
+}
+
+.sessao-5 {
+    display: var(--display-sessao-5);
+}
+
+.sessao-6 {
+    display: var(--display-sessao-6);
 }
 
 footer {
